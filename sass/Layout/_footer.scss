@@ -1,0 +1,99 @@
+.footer {
+    background-color: $color-purple-0;
+    color: $color-white-0;
+
+    &__bottom {
+        height: rem(50px);
+        background-color: $color-purple-1;
+    }
+
+    &__content {
+        padding: rem(145px) rem(140px);
+    }
+
+    &__logo {
+        padding-right: 40%;
+    }
+
+    &__item {
+        .title {
+            font-family: Raleway-Bold;
+            margin-bottom: rem(55px);
+            font-size: rem(24px);
+            letter-spacing: rem(0.96px);
+        }
+
+        .sub-title {
+            font-family: Raleway-SemiBold;
+            font-size: rem(21px);
+            letter-spacing: rem(0.84px);
+            color: $color-pink-0;
+        }
+
+        li {
+            font-size: rem(18px);
+            letter-spacing: rem(0.72px);
+            margin-bottom: rem(35px);
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: 70%;
+    }
+
+    &__policy {
+        li {
+            display: inline-block;
+            font-size: rem(16px);
+            letter-spacing: rem(0.64px);
+            color: $color-white-0;
+            opacity: 0.22;
+            padding: 0 rem(8px);
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer__content {
+        padding: rem(75px) rem(25px) 0 rem(25px);
+    }
+
+    .footer__logo {
+        padding-right: 30%;
+    }
+
+    .footer__item .title {
+        margin-bottom: rem(35px);
+    }
+
+    .footer__item .sub-title {
+        margin-bottom: rem(70px);
+    }
+
+    .footer__item li {
+        font-size: rem(16px);
+    }
+
+    .footer__item li:last-child {
+        margin-bottom: rem(85px);
+    }
+
+    .footer__policy li:last-child {
+        margin-bottom: rem(35px);
+    }
+
+    .footer__icon {
+        width: 77%;
+    }
+}

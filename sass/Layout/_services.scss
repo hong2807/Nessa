@@ -1,0 +1,75 @@
+.services {
+    background-image: url('../img/Group 2332.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__content {
+        padding-left: rem(325px);
+        padding-right: rem(325px);
+    }
+
+    &__wrapper {
+        padding-top: rem(60px);
+        padding-bottom: rem(80px);
+    }
+
+
+    &__item {
+        background-color: $color-white-0;
+        border-radius: 10px;
+        padding: rem(20px) rem(40px) rem(20px) rem(30px);
+        margin-bottom: rem(15px);
+    }
+
+    &__item-text {
+        span {
+            display: inline-block;
+            width: rem(60px);
+            height: rem(60px);
+            background-color: $color-orange-1;
+            border-radius: 50%;
+        }
+
+        p {
+            font-family: Nunito-Bold;
+            font-size: rem(28px);
+            letter-spacing: rem(1.12px);
+            color: $color-purple-0;
+            margin-left: rem(25px);
+            margin-bottom: 0;
+        }
+    }
+
+    i.fa-plus {
+        padding-left: rem(10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .services {
+        &__content {
+            padding: rem(70px) rem(20px);
+        }
+
+        &__wrapper {
+            padding-bottom: rem(50px);
+        }
+
+        &__item {
+           padding-left: rem(30px);
+           padding-right: rem(30px);
+        }
+
+        &__item-text {
+            span {
+                display: none;
+            }
+
+            p {
+                font-size: rem(16px);
+                margin-left: 0;
+                text-align: left;
+            }
+        }
+    }
+}

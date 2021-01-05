@@ -1,0 +1,21 @@
+.signin__form {
+    .signin__item {
+        position: relative;
+
+        .form-control:focus {
+            box-shadow: unset;
+        }
+
+        input {
+            padding-right: 35px;
+        }
+
+        i {
+            position: absolute;
+            right: 12px;
+            top: 10px;
+        }
+    }
+
+  
+}

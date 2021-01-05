@@ -1,0 +1,46 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-white-0;
+    z-index: 100;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(20px) rem(45px);
+    }
+
+    &__right {
+        li {
+            display: inline-block;
+            padding: 0 rem(35px);
+
+            a {
+                font-size: rem(18px);
+                letter-spacing: rem(0.72px);
+                color: $color-purple-0;
+            }
+            
+        }
+
+        .user-icon {
+            width: rem(57px);
+            height: rem(57px);
+            margin-left: rem(10px);
+            border-radius: 32px;
+            background-color: rgba(241, 115, 127,0.27);
+            position: relative;
+            padding: 0;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+}

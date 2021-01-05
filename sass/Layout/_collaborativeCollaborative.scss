@@ -1,0 +1,101 @@
+.collaborative__telemedicine {
+    background-image: url('../img/Path 701.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &-content {
+        padding-left: rem(320px);
+        padding-right: rem(320px);
+    }
+
+    &-benefit {
+        &-item {
+            text-align: center;
+            margin-bottom: rem(135px);
+
+            .title {
+                font-family: Raleway-ExtraBold;
+                font-size: rem(21px);
+                letter-spacing: rem(0.84px);
+                margin: rem(30px) 0;
+            }
+
+            .description {
+                font-size: rem(16px);
+                letter-spacing: rem(0.64px);
+            }
+        }
+    }
+
+    &-timeline {
+        .headline-wrapper {
+            text-align: center;
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                border-top: 2px solid $color-purple-4;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: -1;
+            }
+        }
+
+        .headline {
+            font-size: rem(29px);
+            letter-spacing: rem(1.16px);
+            color: $color-pink-3;
+            background-color: $color-purple-0;
+            display: inline-block;
+            padding: rem(5px) rem(35px);
+            margin-bottom: 0;
+        }
+
+        &-item {
+            margin-top: rem(100px);
+            margin-bottom: rem(200px);
+
+            .timeline-text {
+                padding-left: rem(95px);
+            }
+
+            .timeline-text.second {
+                padding-left: 0;
+                padding-right: rem(130px);
+            }
+
+            .title {
+                font-family: Nunito-SemiBoldItalic;
+                font-size: rem(14px);
+                letter-spacing: rem(1.68px);
+                color: $color-pink-0;
+            }
+
+            .sub-title {
+                font-family: Nunito-Bold;
+                font-size: rem(26px);
+                letter-spacing: rem(1.04px);
+                color: $color-purple-0;
+                margin-top: rem(20px);
+                margin-bottom: rem(35px);
+                border-bottom: 2px solid $color-purple-4;
+                padding-bottom: rem(30px);
+            }
+
+            .description {
+                font-size: rem(18px);
+                letter-spacing: rem(0.72px);
+                color: $color-purple-0;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .collaborative__telemedicine {
+        
+    }
+}

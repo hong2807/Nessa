@@ -1,0 +1,34 @@
+.getstarted {
+    background-image: url('../img/Group 2329.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $color-white-0;
+
+    &__content {
+        padding-left: rem(150px);
+        padding-right: rem(150px);
+    }
+
+    .title-white {
+        margin: rem(70px) 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .getstarted {
+        &__content {
+            padding: rem(70px) rem(33px);
+        }
+
+        .title-white {
+            font-size: 24px;
+            letter-spacing: 0.96px;
+            margin-top: rem(20px);
+            margin-bottom: rem(50px);
+        }
+
+        button.btn-border-white-large {
+            font-size: rem(16px);
+        }
+    }
+}

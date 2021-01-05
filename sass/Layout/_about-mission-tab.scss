@@ -1,0 +1,193 @@
+.about__mission-tab {
+    background-image: url('../img/Group 2345.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    &-content {
+        padding-left: rem(350px);
+        padding-right: rem(350px);
+        text-align: center;
+
+        .values-slide {
+            .slick-list {
+                margin: 0 rem(-63px);
+            }
+        }
+
+        .tab-name {
+            .nav {
+                justify-content: center;
+            }
+
+            .nav-link {
+                font-size: rem(18px);
+                letter-spacing: rem(0.72px);
+                color: $color-purple-0;
+                padding: 0;
+                margin: rem(8px) rem(16px);
+                padding-bottom: rem(40px);
+            }
+
+            .nav-link.active {
+                border-bottom: 5px solid $color-pink-0;
+                font-family: Raleway-ExtraBold;;
+            }
+        }
+        
+        .tab-content {
+            .tab-pane-values {
+                margin-top: rem(90px);
+            }
+
+            .tab-pane-philosophy {
+                margin-top: rem(125px);
+            }
+
+            .values-slide {
+                .values-item {
+                    &:focus {
+                        outline: unset;
+                    }
+                    text-align: center;
+                    padding: 0 rem(63px);
+                }
+        
+                .title {
+                    width: rem(275px);
+                    height: rem(275px);
+                    margin: auto;
+                    border-radius: 50%;
+                    background-color: white;
+                    font-size: rem(24px);
+                    font-family: Nunito-Bold;
+                    letter-spacing: rem(0.96px);
+                    color: $color-purple-0;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    padding-bottom: rem(25px);
+                    margin-bottom: rem(50px);
+    
+                    p {
+                        padding-left: rem(60px);
+                        padding-right: rem(60px);
+                        height: 75px;
+                    }
+                }
+        
+                .description {
+                    text-align: left;
+                    font-size: rem(18px);
+                    letter-spacing: rem(0.72px);
+                    color: $color-purple-0;
+                    width: rem(275px);
+                    margin: auto;
+                }
+            }
+
+            .philosophy-content {
+                .philosophy-item {
+                    margin-top: rem(40px);
+                }
+
+                .title {
+                    font-size: rem(32px);
+                    font-family: Nunito-Bold;
+                    letter-spacing: rem(1.28px);
+                    color: $color-purple-0;
+                    margin-bottom: rem(35px);
+                }
+
+                .description{
+                    font-size: rem(21px);
+                    letter-spacing: rem(0.84px);
+                    color: $color-purple-0;
+                }
+            }
+            
+        }
+    }
+
+   
+}
+
+@media (max-width: 576px) { 
+    .about__mission-tab {
+        position: relative;
+
+        &-content {
+            padding-left: rem(20px);
+            padding-right: rem(20px);
+
+            .values-slide {
+                .slick-list {
+                    margin: 0;
+                }
+            }
+    
+            .tab-name {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                transform: translateY(-100%);
+
+                .nav-link {
+                    font-size: rem(14px);
+                    letter-spacing: rem(0.56px);
+                    margin-bottom: 0;
+                }
+            }
+            
+            .tab-content {
+                .tab-pane-values {
+                    margin-top: 0;
+                }
+
+                .tab-pane-philosophy {
+                    margin-top: 0;
+                }
+
+                .values-slide {
+                    .values-item {
+                       padding: 0;
+                    }
+            
+            
+                    .description {
+                        text-align: center;
+                        font-size: rem(14px);
+                        letter-spacing: rem(0.56px);
+                        margin-bottom: rem(50px);
+                    }
+                }
+    
+                .philosophy-content {
+                    .title {
+                        font-size: rem(24px);
+                        letter-spacing: rem(0.96px);
+                    }
+    
+                    .description{
+                        font-size: rem(14px);
+                        letter-spacing: rem(0.56px);
+                    }
+                }
+                
+            }
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: $color-purple-0;
+        }
+    
+        .slick-dots li button:before {
+            font-size: 10px;
+            color: $color-purple-0;
+            opacity: 0.1;
+        }
+    }
+}
+
+
+

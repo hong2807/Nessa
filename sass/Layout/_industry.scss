@@ -1,0 +1,149 @@
+.industry {
+    &__content {
+        padding-left: rem(125px);
+        padding-right: rem(125px);
+    }
+
+    &__slide {
+        margin: 0 -40px;
+    }
+
+    &__item {
+        padding: rem(40px);
+        text-align: left;
+
+        &:focus {
+            outline: unset;
+        }
+    }
+
+    &__wrapper {
+        background-color: $color-white-0;
+        border-radius: 20px; 
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        .wrapper-description {
+            padding-left: rem(30px);
+            padding-right: rem(60px);
+            padding-top: rem(35px);
+            padding-bottom: rem(45px);
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .date {
+            font-family: Raleway-Regular;
+            font-size: rem(14px);
+            letter-spacing: rem(0.56px);
+            color: $color-purple-0;
+            text-align: right;
+            padding-top: rem(25px);
+            padding-right: rem(25px);
+            margin-bottom: 0;
+        }
+
+        .title {
+            font-family: Raleway-Bold;
+            font-size: rem(24px);
+            letter-spacing: rem(0.96px);
+            color: $color-purple-0;
+            margin-bottom: 0;
+        }
+
+        .description {
+            font-size: rem(18px);
+            letter-spacing: rem(0.72px);
+            color: $color-purple-0;
+            margin-top: rem(35px);
+            margin-bottom: rem(40px);
+        }
+
+        .btn-read-more {
+            font-family: Raleway-Bold;
+            font-size: rem(18px);
+            letter-spacing: rem(0.72px);
+            color: $color-purple-0;
+        }
+    }
+
+    .slick-list {
+        display: flex;
+        padding-bottom: rem(20px);
+    }
+    
+    .slick-track {
+        display: flex;
+   
+    }
+}
+
+
+@media (max-width: 576px) {
+    .industry {
+        .title-large {
+            font-size: rem(30px) !important;
+        }
+
+        &__content {
+            padding: rem(70px) rem(20px);
+        }
+
+        &__slide {
+            margin: 0 -17px;
+        }
+
+        &__item {
+            padding: rem(17px);
+        }
+
+        &__wrapper {
+            background-color: $color-white-0;
+            border-radius: 20px; 
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+            height: 100%;
+            
+            
+            .wrapper-description {
+                padding-left: rem(20px);
+                padding-right: rem(30px);
+                padding-top: rem(15px);
+                padding-bottom: rem(50px);
+            }
+
+            .description {
+                font-size: rem(14px);
+            }
+
+            .btn-read-more {
+                font-size: rem(14px);
+                letter-spacing: rem(0.72px);
+                color: $color-purple-0;
+            }
+        }
+
+        .slick-list {
+            padding-bottom: 0;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: $color-purple-0;
+        }
+
+        .slick-dots li button:before {
+            font-size: 10px;
+            color: $color-purple-0;
+            opacity: 0.1;
+        }
+
+        .btn-read-more {
+            margin-top: 50px;
+            font-size: rem(16px);
+        }
+    }
+
+}

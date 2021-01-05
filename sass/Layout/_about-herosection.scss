@@ -1,0 +1,48 @@
+.about__hero-section {
+    background-image: url('../img/Group 2344.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-vertical {
+        padding-top: rem(180px);
+        padding-bottom: rem(180px);
+    }
+
+    &-text {
+        text-align: center;
+
+        .title-white {
+            font-family: Nunito-SemiBold;
+            font-size: rem(40px);
+        }
+    }
+}
+
+@media (max-width: 576px) { 
+    .about__hero-section {
+        &-content {
+            padding-left: rem(20px);
+            padding-right: rem(20px);
+        }
+
+        .container-vertical {
+            padding-top: rem(120px);
+            padding-bottom: rem(120px);
+        }
+    
+        &-text {            
+            .title-white {
+                font-size: rem(24px);
+                letter-spacing: rem(0.96px);
+            }
+        }
+    }
+
+    
+}

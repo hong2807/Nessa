@@ -1,0 +1,57 @@
+.about__mission {
+    &-content {
+        padding-left: rem(350px);
+        padding-right: rem(350px);
+    }
+
+    .container-vertical {
+        padding-bottom: rem(40px);
+    }
+
+    &-text {
+        text-align: center;
+
+        .description-top {
+            color: $color-purple-0;
+            font-size: rem(38px);
+            font-family: Nunito-SemiBold;
+            letter-spacing: rem(1.52px);
+            padding: 0 rem(200px) rem(30px) rem(200px);
+        }
+
+        .description-bottom {
+            color: $color-purple-0;
+            font-size: rem(21px);
+            letter-spacing: rem(0.84px);
+        }
+    }
+}
+
+@media (max-width: 576px) { 
+    .about__mission {
+        &-content {
+            padding-left: rem(20px);
+            padding-right: rem(20px);
+        }
+
+        .container-vertical {
+            padding-bottom: rem(120px);
+        }
+
+        &-text {
+
+            .description-top {
+                font-size: rem(24px);
+                letter-spacing: rem(0.96px);
+                padding: 0;
+
+            }
+    
+            .description-bottom {
+                font-size: rem(14px);
+                letter-spacing: rem(0.56px);
+                margin-top: rem(50px);
+            }
+        }
+    } 
+}

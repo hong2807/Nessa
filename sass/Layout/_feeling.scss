@@ -1,0 +1,41 @@
+.feeling {
+    background-color: $color-purple-0;
+    color: $color-white-0;
+
+    &__content {
+        padding: rem(70px) 0;
+    }
+
+    &__title {
+        font-family: Nunito-Bold;
+        font-size: rem(36px);
+        letter-spacing: rem(1.44px);
+        margin-bottom: 0;
+    }
+
+    .btn-chat {
+        margin-left: rem(72px);
+    }
+}
+
+@media (max-width: 576px) {
+    .feeling {
+    
+        &__content {
+            flex-wrap: wrap;
+            padding: rem(85px) rem(24px);
+        }
+
+        &__title {
+            font-size: rem(24px);
+            letter-spacing: rem(0.96px);
+            margin-bottom: rem(45px);
+        }
+
+        .btn-chat {
+            margin-left: 0;
+            font-size: rem(16px);
+        }
+
+    }
+}

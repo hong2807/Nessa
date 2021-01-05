@@ -1,0 +1,44 @@
+.telemedicine-timeline {
+
+    
+        .timeline__list {
+            padding-bottom: 1em;
+            position: relative;
+
+            &::before {
+                content: "";
+                border-right: 3px solid #FDD0D4;
+                left: -8px;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                top: 0;
+            }
+
+            li {
+                margin: 0 0 3em 0;
+                padding: 0 2em 0em 2em;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    left: -20px;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background:  #FDD0D4;
+                    border: 5px solid #FDD0D4;
+                }
+            }
+        }
+    
+}
+
+
+
+
+  
+  
+  
