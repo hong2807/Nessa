@@ -133,14 +133,14 @@ $( document ).ready(function() {
     function openMenu(){
       $('.menu li').addClass('animate');
       $('.menu').css('height', 'calc(100vh - 97px - 100px)');
-      $('.screen').css('backgroundColor', 'rgba(0, 0, 0, 0.3)');
+      $('.screen').css('backgroundColor', 'rgba(0, 0, 0, 0.3)').css('height', "calc(100vh - 97px)");
       $('body').css('overflow', 'hidden');
     }
 
     function closeMenu(){				
       $('.menu li').removeClass('animate');
       $('.menu').css('height', '0px');
-      $('.screen').css('backgroundColor', 'unset');
+      $('.screen').css('backgroundColor', 'unset').css('height', 0);
       $('body').css('overflow', 'auto');
     }
 

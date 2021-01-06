@@ -2,6 +2,33 @@
     background-image: url('../img/Group 2339.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
+    .container-vertical {
+        padding-bottom: rem(40px);
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-text {
+        text-align: center;
+        max-width: 795px;
+        
+        .title-white {
+            margin-top: rem(55px);
+            margin-bottom: rem(35px);
+        }
+
+        .description {
+            font-size: rem(21px);
+            letter-spacing: rem(0.84px);
+            color: $color-white-0;
+            line-height: rem(44px);
+        }
+    }
 }
 
 @media (max-width: 576px) {

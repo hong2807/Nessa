@@ -40,7 +40,9 @@
 
 
 
-
+html {
+    margin: 0px !important;
+}
 
 body {
     font-family: Raleway-Medium;
@@ -66,7 +68,21 @@ a:hover {
 
 .header__right li a.activeMenu{
     padding-bottom: rem(15px);
-    border-bottom: 3px solid $color-pink-0;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: $color-pink-0;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    // border-bottom: 3px solid $color-pink-0;
+
 }
 
 .title-small {
@@ -92,6 +108,14 @@ a:hover {
     color: $color-white-0;
     font-size: rem(36px);
     letter-spacing: rem(1.44px);
+    margin-bottom: 0;
+}
+
+.title-white-large {
+    font-family: Nunito-Bold;
+    color: $color-white-0;
+    font-size: rem(40px);
+    letter-spacing: rem(1.6px);
     margin-bottom: 0;
 }
 

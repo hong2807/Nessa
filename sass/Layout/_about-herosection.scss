@@ -16,11 +16,6 @@
 
     &-text {
         text-align: center;
-
-        .title-white {
-            font-family: Nunito-SemiBold;
-            font-size: rem(40px);
-        }
     }
 }
 
@@ -37,7 +32,7 @@
         }
     
         &-text {            
-            .title-white {
+            .title-white-large {
                 font-size: rem(24px);
                 letter-spacing: rem(0.96px);
             }
