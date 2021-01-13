@@ -15,118 +15,731 @@
   </head>
 
   <body>
-    <div id='telemedicine'>
+    <div >
+        <header class="header d-none d-xl-block">
+            <div class="header__content">
+              <div class="header__logo header__left">
+                <a href="/">
+                  <img src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="header__right">
+                <ul class="d-flex align-items-center">
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/collaborative.html">Collaborative Care</a></li>
+                  <li><a href="/telemedicine.html">Telemedicine</a></li>
+                  <li><a href="/insight.html">Insight</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+                  <a href="/signin.html">
+                    <button class="btn btn-color-pink btn-sign-in">Get Started</button>
+                  </a>
+                  <a href="/signup.html">
+                    <li  class="user-icon"><img  src="./img/user.svg" alt="user"/></li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+        </header>
+        <section class="header-mobile d-block d-xl-none">
+            <div class="header-top-mobile navbar">			            
+              <div class="burger-mobile">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>    
+              <div class="">
+                <a href="/"><img src="./img/logo.png" alt="logo"></a>
+              </div>
+              <a href="/signup.html" class="user-icon">
+                <img  src="./img/user-mobile.svg" alt="user"/>
+              </a>
+          </div>
+            <div class="screen">
+                <!-- <div class="navbar"></div> -->
+                <!-- <div class="circle"></div> -->
+                <div class="menu">
+                  <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/collaborative.html">Collaborative Care</a></li>
+                    <li><a href="/telemedicine.html">Telemedicine</a></li>
+                    <li><a href="/insight.html">Insight</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <a href="/signin.html">
+                      <button class="btn btn-color-pink btn-sign-in">Get Started</button>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+        </section>
 
-        <div class="page-content">
-            <section class="profile">
-                <div class="container">
-                    <ul class="d-flex justify-content-around">
-                        <li>APPOINTMENTS</li>
-                        <li>SCHEDULING</li>
-                        <li>VIDEO & MESSAGING</li>
-                        <li>PAYMENTS</li>
-                        <li>HEALTH RECORDS</li>
-                    </ul>
-                </div>  
+        <div class="page-content" id='telemedicine'>
+            <section class="collaborative__hero-section">
+                <div class="collaborative__hero-section-content container-vertical">
+                    <div class="collaborative__hero-section-text">
+                        <p class="title-small">
+                            HOW TELEMEDICINE WORKS
+                        </p>
+                        <h2 class="title-white">
+                            Healthcare that’s fits today’s modern tech 
+                        </h2>
+                        <p class="description">
+                            Whether your child wakes up with a fever in the middle of the night, or someone in your family just received a serious diagnosis. We’re here to help you along your journey
+                        </p>
+                    </div>
+                </div>
             </section>
 
-            <section class="telemedicine-timeline py-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="timeline__left">
-                            <ul>
-                                <li>
-                                    <img src="img/img02.png"/>
-                                </li>
-                            </ul>
+            <section class="telemedicine-timeline">
+                <div class="telemedicine-timeline__content">
+                    <div class="telemedicine-timeline__top"></div>
+                    <div class="telemedicine-timeline__profile">
+                        <div class="telemedicine-timeline__profile-content">
+                            <div class="profile-img">
+                                <img src="./img/Mask Group 12.jpg"/>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="timeline__right">
-                                <div class="timeline__list">
-                                    <li>
-                                        <p class="title-small">FREE CONSULTATION</p>
-                                        <h2 class="title-large">Quality wellness starts with a Free Care Consultation</h2>
-                                        <p>Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum diam erat, vitae posuere lacus pellentesque non</p>
-                                    </li>
+                            <div class="d-flex justify-content-between profile-text">
+                                <div class="text-center group-profile">
+                                    <img src="./img/Group 2347.svg"/>
+                                    <p>APPOINTMENTS</p>
                                 </div>
-                            
+                                <div class="text-center  group-profile">
+                                    <img src="./img/Group 2316.svg"/>
+                                    <p>SCHEDULING</p>
+                                </div>
+                                <div class="text-center  group-profile">
+                                    <img src="./img/Group 2318.svg"/>
+                                    <p>VIDEO & MESSAGING</p>
+                                </div>
+                                <div class="text-center  group-profile">
+                                    <img src="./img/Group 2320.svg"/>
+                                    <p>PAYMENTS</p>
+                                </div>
+                                <div class="text-center  group-profile">
+                                    <img src="./img/Group 2322.svg"/>
+                                    <p>HEALTH RECORDS</p>
+                                </div>
+                            </div>
+                           
+                        </div>  
+                    </div>
+                    <div class="telemedicine-timeline__detail">
+                        <div class="telemedicine-timeline__detail-content">
+                            <div class="row detail-wrapper">
+                                <div class="col-12 col-md-5 col-xl-6 order">
+                                    <div class="telemedicine-timeline__left img-right">
+                                    <ul>
+                                        <li>
+                                            <img src="img/Group 2342.png"/>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-7 col-xl-6">
+                                    <div class="telemedicine-timeline__right">
+                                        <li>
+                                            <p class="title-small">FREE CONSULTATION</p>
+                                            <h2 class="title-large">
+                                                Quality wellness starts with a Free Care Consultation
+                                            </h2>
+                                            <p class="description">
+                                                Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum diam erat, vitae posuere lacus pellentesque non.
+                                            </p>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row detail-wrapper">
+                                <div class="col-12 col-md-7 col-xl-6">
+                                    <div class="telemedicine-timeline__left">
+                                    <ul>
+                                        <li>
+                                            <p class="title-small">CONNECT WITH A DOCTOR</p>
+                                            <h2 class="title-large">
+                                                Followed up by a online Telemedicine Appointment
+                                            </h2>
+                                            <p class="description">
+                                                Speak with your doctor online wit our video platform. Praesent vestibulum diam erat, vitae posuere lacus pellentesque non.
+                                            </p>
+                                        </li>
+                                        
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 col-xl-6 order">
+                                    <div class="telemedicine-timeline__right">
+                                        <li>
+                                            <img src="img/Group 2341.png"/>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row detail-wrapper">
+                                <div class="col-12 col-md-5 col-xl-6 order">
+                                    <div class="telemedicine-timeline__left img-right">
+                                    <ul>
+                                        <li>
+                                            <img src="img/Group 2340.png"/>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-7 col-xl-6">
+                                    <div class="telemedicine-timeline__right">
+                                        <li>
+                                            <p class="title-small">HEALTH & WELLNESS PLAN</p>
+                                            <h2 class="title-large">
+                                                Recommendation & navigation of the next steps
+                                            </h2>
+                                            <p class="description">
+                                                Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum diam erat, vitae posuere lacus pellentesque non.
+                                            </p>
+                                        </li>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="telemedicine-timeline__bottom"></div>
+                </div>
+            </section>
 
-                        <div class="col-12 col-md-6">
-                            <div class="timeline__left">
-                            <ul>
-                                <li>
-                                    <p class="title-small">FREE CONSULTATION</p>
-                                    <h2 class="title-large">Quality wellness starts with a Free Care Consultation</h2>
-                                    <p>Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum diam erat, vitae posuere lacus pellentesque non</p>
-                                </li>
-                                
-                            </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="timeline__right">
-                                <div class="timeline__list">
-                                    <li>
-                                        <img src="img/img02.png"/>
-                                    </li>
+            <section class="group-section">
+                <section class="telemedicine__package">
+                    <div class="telemedicine__package-content">
+                        <div class="text-center">
+                            <div class="telemedicine__package-title">
+                                <h2 class="headline">Telemedicine when you need it</h2>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="unit mb-0">$</p>
+                                    <div class="d-flex align-items-end">
+                                        <div>
+                                            <p class="mb-0 only">Only</p>
+                                            <p class="price mb-0">49</p>
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="per mb-0">Per</p>
+                                            <p class="per">Visit</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            
+                                <h3 class="sub-title">It’s easy to get the healthcare you deserve</h3>
                             </div>
+                            <div class="telemedicine__package-text">
+                                <div class="telemedicine__package-text-wrapper">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 telemedicine__package-text-item-wrapper">
+                                            <div class="telemedicine__package-text-item d-flex align-items-baseline">
+                                                <div class="check-wrapper">
+                                                    <img src ="./img/Path 3229.svg" alt="check"/>
+                                                </div>
+                                                <div class="text-left">
+                                                    <p class="title">
+                                                        FREE Care Consultation 
+                                                    </p>
+                                                    <p class="description">
+                                                        Your doctor and care manager will recommend the next steps, and follow up with a path to recovery.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 telemedicine__package-text-item-wrapper">
+                                            <div class="telemedicine__package-text-item d-flex align-items-baseline">
+                                                <div class="check-wrapper">
+                                                    <img src ="./img/Path 3229.svg" alt="check"/>
+                                                </div>
+                                                <div class="text-left">
+                                                    <p class="title">
+                                                        Doctor Visit
+                                                    </p>
+                                                    <p class="description">
+                                                        An in depth doctor visit will let us get to know you and your health needs.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="telemedicine__package-text-wrapper">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 telemedicine__package-text-item-wrapper">
+                                            <div class="telemedicine__package-text-item d-flex align-items-baseline">
+                                                <div class="check-wrapper">
+                                                    <img src ="./img/Path 3229.svg" alt="check"/>
+                                                </div>
+                                                <div class="text-left">
+                                                    <p class="title">
+                                                        Recommendations & next steps
+                                                    </p>
+                                                    <p class="description">
+                                                        Your team is by your side throughout your health journey for recommendations, or to answer any questions.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 telemedicine__package-text-item-wrapper">
+                                            <div class="telemedicine__package-text-item d-flex align-items-baseline">
+                                                <div class="check-wrapper">
+                                                    <img src ="./img/Path 3229.svg" alt="check"/>
+                                                </div>
+                                                <div class="text-left">
+                                                    <p class="title">
+                                                        Follow Up
+                                                    </p>
+                                                    <p class="description">
+                                                        We like to follow up with our patients, to be sure the path to recovery is on course.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-color-orange">Join Now</button>
                         </div>
+                    </div>
+                </section>
 
-                        <div class="col-12 col-md-6">
-                            <div class="timeline__left">
-                            <ul>
-                                <li>
-                                    <img src="img/img02.png"/>
-                                </li>
-                            </ul>
+                <section class="testimonials">
+                    <div class="testimonials__content container-vertical">
+                    <div class="testimonials__title text-center">
+                        <p class="title-small">TESTIMONIALS</p>
+                        <h2 class="title-large">So many people couldn't be wrong</h2>
+                    </div>
+                    <div class="testimonials__slide">
+                        <div class="testimonials__item">
+                            <div class="testimonials__item-wrapper">
+                            <div>
+                                <img src="./img/Path 5.png" alt="quote"/>
+                            </div>
+                            <div class="wrapper-description">
+                                <p class="description">
+                                "Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum"
+                                </p>
+                                <p class="name">Bob G </p>
+                            </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="timeline__right">
-                                <div class="timeline__list">
-                                    <li>
-                                        <p class="title-small">FREE CONSULTATION</p>
-                                        <h2 class="title-large">Quality wellness starts with a Free Care Consultation</h2>
-                                        <p>Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum diam erat, vitae posuere lacus pellentesque non</p>
-                                    </li>
-                                </div>
-                            
+                        <div class="testimonials__item">
+                            <div class="testimonials__item-wrapper">
+                            <div>
+                                <img src="./img/Path 5.png" alt="quote"/>
+                            </div>
+                            <div class="wrapper-description">
+                                <p class="description">
+                                "Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum"
+                                </p>
+                                <p class="name">Bob A</p>
+                            </div>
                             </div>
                         </div>
+                        <div class="testimonials__item">
+                            <div class="testimonials__item-wrapper">
+                            <div>
+                                <img src="./img/Path 5.png" alt="quote"/>
+                            </div>
+                            <div class="wrapper-description">
+                                <p class="description">
+                                "Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum"
+                                </p>
+                                <p class="name">Bob B</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item">
+                            <div class="testimonials__item-wrapper">
+                            <div>
+                                <img src="./img/Path 5.png" alt="quote"/>
+                            </div>
+                            <div class="wrapper-description">
+                                <p class="description">
+                                "Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum"
+                                </p>
+                                <p class="name">Bob D</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="testimonials__item">
+                            <div class="testimonials__item-wrapper">
+                            <div>
+                                <img src="./img/Path 5.png" alt="quote"/>
+                            </div>
+                            <div class="wrapper-description">
+                                <p class="description">
+                                "Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum"
+                                </p>
+                                <p class="name">Bob E</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-border-purple-large">Reviews</button>
+                    </div>
+                    </div>
+                </section>
 
-                        <div class="col-12 col-md-6">
-                            <div class="timeline__left">
-                            <ul>
-                                <li>
-                                    <p class="title-small">FREE CONSULTATION</p>
-                                    <h2 class="title-large">Quality wellness starts with a Free Care Consultation</h2>
-                                    <p>Donec quam nunc, accumsan sed enim viverra, semper ultrices nulla. Praesent vestibulum diam erat, vitae posuere lacus pellentesque non</p>
-                                </li>
-                                
-                            </ul>
+            </section>
+
+            <section class="feeling">
+                <div class="feeling__content d-flex justify-content-center align-items-center">
+                  <h2 class="feeling__title">How are you feeling today?</h2>
+                  <button class="btn btn-border-white-large btn-chat">Chat with a Doctor</button>
+                </div>
+            </section>
+
+            <section class="questions">
+                <div class="questions__content container-vertical text-center"> 
+                    <div class="questions__title">
+                        <p class="title-small">FREQUENTLY ASKED QUESTIONS</p>
+                        <h2 class="title-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h2>
+                    </div>
+
+                    <div class="tab-name">
+                        <ul class="nav" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">
+                                General Info                                                  
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="everyday-tab" data-toggle="tab" href="#everyday" role="tab" aria-controls="everyday" aria-selected="false">
+                                Everyday Care 
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="mental-tab" data-toggle="tab" href="#mental" role="tab" aria-controls="mental" aria-selected="false">
+                                Mental Health
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="prescriptions-tab" data-toggle="tab" href="#prescriptions" role="tab" aria-controls="prescriptions" aria-selected="false">
+                                Prescriptions  
+                            </a>
+                          </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane tab-pane-general fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                            <div class="questions__wrapper">
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p class="description">How do I qualify for NessaMD?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Will I speak with a real doctor?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Can NessaMD assist with emergency situations?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Can I request a specific doctor?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>How do I register for a new account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>How do I add dependents to my account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I reset my password?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I unlock my account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>I have not received a call from my provider.</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I request a refund??</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I request a refund??</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="timeline__right">
-                                <div class="timeline__list">
-                                    <li>
-                                        <img src="img/img02.png"/>
-                                    </li>
+                        <div class="tab-pane tab-pane-everyday fade" id="everyday" role="tabpanel" aria-labelledby="everyday-tab">
+                            <div class="questions__wrapper">
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>How do I qualify for NessaMD?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
                                 </div>
-                            
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Will I speak with a real doctor?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Can NessaMD assist with emergency situations?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Can I request a specific doctor?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane tab-pane-mental fade" id="mental" role="tabpanel" aria-labelledby="mental-tab">
+                            <div class="questions__wrapper">
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Can I request a specific doctor?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>How do I register for a new account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>How do I add dependents to my account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I reset my password?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I unlock my account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>I have not received a call from my provider.</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I request a refund??</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I request a refund??</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane tab-pane-prescriptions fade" id="prescriptions" role="tabpanel" aria-labelledby="prescriptions-tab">
+                            <div class="questions__wrapper">
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Can NessaMD assist with emergency situations?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>Can I request a specific doctor?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>How do I register for a new account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                    <p>How do I add dependents to my account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I reset my password?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="questions__item d-flex justify-content-between align-items-center">
+                                    <div class="questions__item-text d-flex align-items-center">
+                                        <p>How do I unlock my account?</p>
+                                    </div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section class="getstarted">
+                <div class="getstarted__content container-vertical text-center">
+                  <p class="title-small">TELEMEDICINE FOR ALL</p>
+                  <h3 class="title-white">Gain a highly experienced perspective today</h3>
+                  <button class="btn btn-border-white-large">Get Started</button>
+                </div>
+            </section>
+
+            <section class="industry">
+                <div class="industry__content container-vertical">
+                  <div class="industry__title text-center">
+                    <p class="title-small">INDUSTRY INSIGHT</p>
+                    <h2 class="title-large">Health that is real wealth</h2>
+                  </div>
+                  <div class="industry__slide">
+                    <div class="industry__item">
+                      <div class="industry__wrapper">
+                        <div>
+                          <img class="w-100" src="./img/NoPath1.jpg"/>
+                        </div>
+                        <p class="date">8.18.2020</p>
+                        <div class="wrapper-description">
+                          <h4 class="title">Medical Obesity</h4>
+                          <p class="description">
+                            I believe there is such a thing as Medical Obesity. Obesity is defined as a condition characterized by the excessive accumulation and storage of fat in the body…
+                          </p>
+                          <a class="btn-read-more">READ MORE ></a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="industry__item">
+                      <div class="industry__wrapper">
+                        <div>
+                          <img class="w-100" src="./img/NoPath2.jpg"/>
+                        </div>
+                        <p class="date">8.18.2020</p>
+                        <div class="wrapper-description">
+                          <h4 class="title">On Medical Community</h4>
+                          <p class="description">
+                            Nowadays, we find a tsunami of articles on the epidemics of moral injury and physician burnout. As physicians, we were trained to care for our patients. 99.9%…
+                          </p>
+                          <a class="btn-read-more">READ MORE ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="industry__item">
+                      <div class="industry__wrapper">
+                        <div>
+                          <img class="w-100" src="./img/NoPath3.jpg"/>
+                        </div>
+                        <p class="date">8.18.2020</p>
+                        <div class="wrapper-description">
+                          <h4 class="title">For The Love of Medicine</h4>
+                          <p class="description">
+                            This is my response to a recent Newsweek opinion piece written by a seemingly well- respected Yale epidemiologist Dr. Harvey Risch. The SARS CoV2 virus…
+                          </p>
+                          <a class="btn-read-more">READ MORE ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-border-purple-large btn-read-more">Read More</button>
+                  </div>
+                </div>
+            </section>
         </div>
 
+        <footer class="footer">
+            <div class="footer__content">
+              <div class="row">
+                <div class="col-12 col-md-6 col-xl-3">
+                  <div class="footer__item footer__logo">
+                    <a href="/">
+                      <img class="title" src="./img/positive.png"/>
+                    </a>
+                    <p class="sub-title">Experienced doctors just a click away</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                  <div class="footer__item">
+                    <p class="title">Company</p>
+                    <ul>
+                      <li><a href="/about.html">About</a></li>
+                      <li><a href="/collaborative.html">Collaborative Care</a></li>
+                      <li><a href="/telemedicine.html">Telemedicine</a></li>
+                      <li><a href="/insight.html">Insight</a></li>
+                      <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                  <div class="footer__item">
+                    <p class="title">Get care</p>
+                    <ul>
+                      <li><a href="">Free Symptom Checker</a></li>
+                      <li><a href="">Chat with a Doctor</a></li>
+                      <li><a href="">Collaborative Care Membership</a></li>
+                      <li><a href="">FAQ</a></li>
+                      <li><a href="">Press Releases</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                  <div class="footer__item footer__contact">
+                    <div>
+                      <p class="title">Follow us</p>
+                      <ul class="footer__icon d-flex justify-content-between">
+                        <li><a href=""><img src="./img/facebook.svg" alt="facebook"/></a></li>
+                        <li><a href=""><img src="./img/instagram.svg" alt="facebook"/></a></i></li>
+                        <li><a href=""><img src="./img/twitter.svg" alt="facebook"/></a></i></li>
+                        <li><a href=""><img src="./img/in.svg" alt="facebook"/></a></i></li>
+                      </ul>
+                    </div>
+                    <ul class="footer__policy">
+                      <li><a href="">Terms</a></li>
+                      <li><a href="">Privacy</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom"></div>
+          </footer>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -135,7 +748,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--Slick -->
     <script src="lib/slick/slick.min.js"></script>
-   
+    <!--Main JS-->
+    <script src="./js/main.js"></script>
   </body>
   
 </html>

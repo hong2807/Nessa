@@ -42,7 +42,6 @@
 
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         font-size: rem(18px);
-        font-weight: 500;
         letter-spacing: rem(0.72px);
         color: $color-purple-0;
     }
@@ -58,11 +57,11 @@
     }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 1024px) { 
     .email {
         &__content {
             padding: rem(90px) rem(30px);
-           
+            text-align: center;
         }
 
         &__text {
@@ -73,11 +72,25 @@
 
         &__bottom {
             flex-wrap: wrap;
+            justify-content: center !important;
         }
 
         button {
             width: rem(70px);
             border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width: 768px) { 
+    .email {
+        &__content {
+            text-align: left;
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+            justify-content: space-between !important;
         }
     }
 }

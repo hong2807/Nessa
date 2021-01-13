@@ -1,37 +1,193 @@
-.signup__form {
-    .signup__item {
-        position: relative;
+.signup {
+    background: url('../img/Path 1041.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 
-        label {
-            position: absolute;
-            left: 12px;
-            top: 5px;
-            transition: all 0.3s;
+    &__content {
+        margin: rem(65px) rem(440px);
+        padding: rem(50px) rem(110px);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+        background-color: $color-white-0;
+    }
+
+    &__title {
+        .title {
+            font-family: Nunito-SemiBold;
+            font-size: rem(28px);
+            letter-spacing: rem(1.12px);
+            color: $color-purple-0;
         }
 
-        input:focus ~ label {
-            top: -15px;
-            background-color: white;
-        }
-
-        label.active {
-            top: -15px;
-        }
-
-        .form-control:focus {
-            box-shadow: unset;
-        }
-
-        input {
-            padding-right: 35px;
-        }
-
-        i {
-            position: absolute;
-            right: 12px;
-            top: 10px;
+        .description {
+            font-family: Montserrat-Medium;
+            font-size: rem(14px);
+            letter-spacing: rem(0.56px);
+            color: $color-purple-0;
+            margin-bottom: rem(70px);
         }
     }
 
-  
+    &__form {
+        &__item {
+            position: relative;
+            padding: 0 rem(200px);
+
+            &:focus-within {
+                input:focus {
+                    border: 2px solid $color-pink-0;
+                }
+        
+                input:focus ~ label {
+                    top: 0;
+                    background-color: $color-white-0;
+                    color: $color-pink-0;
+                    opacity: 1;
+                }
+            }
+    
+            label {
+                position: absolute;
+                left: 230px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.3s;
+                font-family: Montserrat-Medium;
+                font-size: rem(12px);
+                letter-spacing: rem(0.48px);
+                color: $color-purple-0;
+                opacity: 0.47;
+            }
+
+            
+    
+            label.active {
+                top: 0;
+                background-color: $color-white-0;
+                opacity: 1;
+            }
+    
+            .form-control:focus {
+                box-shadow: unset;
+            }
+    
+            input {
+                padding-right: 35px;
+                height: rem(55px);
+                border-radius: 25px;
+            }
+    
+            i {
+                position: absolute;
+                right: 230px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $color-grey-0;
+            }
+        }
+
+        .btn-next {
+            width: rem(200px);
+            height: rem(50px);
+            background-color: $color-orange-0;
+            border-radius: 30px;
+            color: $color-white-0;
+            font-family: Montserrat-Bold;
+            font-size: rem(12px);
+            letter-spacing: rem(0.48px);
+            margin-top: rem(20px);
+            margin-bottom: rem(35px);
+        }
+
+        // input[type=date]::-webkit-datetime-edit-text {
+        //     -webkit-appearance: none;
+        //     display: none;
+        // }
+        // input[type=date]::-webkit-datetime-edit-month-field{
+        //     -webkit-appearance: none;
+        //     display: none;
+        // }
+        // input[type=date]::-webkit-datetime-edit-day-field {
+        //     -webkit-appearance: none;
+        //     display: none;
+        // }
+        // input[type=date]::-webkit-datetime-edit-year-field {
+        //     -webkit-appearance: none;
+        //     display: none;
+        // }
+
+//         input:placeholder-shown { color: transparent !important; } 
+// .active input[type=date] { color: inherit !important; }
+
+//         input[value="0000-00-00"]::-webkit-datetime-edit {
+//             color: transparent; 
+//        }
+
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+    }
+
+// ::-webkit-datetime-edit { color: transparent; }
+// :focus::-webkit-datetime-edit { color: #000; }
+
+// input[type=date]::-webkit-inner-spin-button,
+//   input[type=date]::-webkit-outer-spin-button {
+//     -webkit-appearance: none;
+//   }
+
+//   input[type=date] {
+//     -moz-appearance: textfield;
+//   }
+
+input::-webkit-datetime-edit{ color: transparent !important; }
+input:focus::-webkit-datetime-edit{ color: #000 !important; }
+
+    .group-text {
+        p {
+            font-family: Montserrat-Medium;
+            font-size: rem(12px);
+            letter-spacing: rem(0.48px);
+            color: $color-green-0;
+
+            a {
+                color: $color-orange-0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .signup {
+    
+        &__content {
+            margin: 0;
+            padding: rem(70px) rem(30px);
+            box-shadow: unset;
+        }
+
+        &__title {
+            .title {
+                font-size: rem(24px);
+                letter-spacing: rem(0.96px);
+            }
+        }
+
+        &__form {
+            &__item {
+                padding: 0;
+
+                label {
+                    left: 30px;
+                }
+
+                i {
+                    right: 30px; 
+                }
+            } 
+        }
+    }
 }

@@ -82,8 +82,16 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .industry {
+        &__content {
+            padding: rem(70px) rem(50px);
+        }
+    }
+}
 
-@media (max-width: 576px) {
+
+@media (max-width: 768px) {
     .industry {
         .title-large {
             font-size: rem(30px) !important;

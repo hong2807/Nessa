@@ -1,0 +1,245 @@
+.group-section {
+    background-image: linear-gradient(to bottom, #fff5f0, #faf8fe 59%);
+}
+
+#telemedicine {
+    .testimonials {
+        background-color: unset;
+
+        .container-vertical {
+            padding-top: 0;
+        }
+    }
+}
+.telemedicine__package {
+    &-content {
+        margin-left: rem(340px);
+        margin-right: rem(340px);
+        background-color: $color-white-0;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+        border-radius: rem(20px);
+        padding: rem(60px) 0;
+
+        position: relative;
+        top: rem(-510px);
+
+        margin-bottom: (-410px);
+    }
+
+    &-title {
+        padding: 0 rem(95px);
+        margin-bottom: rem(40px);
+
+        .headline {
+            font-family: Nunito-Bold;
+            font-size: rem(42px);
+            letter-spacing: rem(1.52px);
+            color: $color-purple-0;
+            margin-bottom: rem(20px);
+        }
+
+        .title {
+            font-size: rem(29px);
+            letter-spacing: rem(1.16px);
+            color: $color-pink-3;
+        }
+
+        .unit {
+            font-family: Raleway-Bold;
+            font-size: rem(45px);
+            color: $color-purple-0;
+        }
+
+        .only {
+            transform: translateY(140%);
+            color: $color-purple-0;
+        }
+
+        .per {
+            color: $color-purple-0;
+        }
+
+        .price {
+            font-family: Raleway-Bold;
+            font-size: rem(92px);
+            letter-spacing: rem(3.4px);
+            color: $color-purple-0;
+        }
+
+        .sub-title {
+            font-family: Nunito-SemiBold;
+            font-size: rem(32px);
+            letter-spacing: rem(1.28px);
+            color: $color-purple-0;
+            margin-top: rem(20px);
+        }
+    }
+
+    
+
+    &-text {
+        &-wrapper {
+            margin-bottom: rem(35px);
+            padding: 0 rem(95px);
+        }
+
+        &-wrapper:nth-child(odd) {
+            background-color: $color-orange-3;
+        }
+    
+        &-wrapper:nth-child(even) {
+            background-color: $color-white-0;
+        }
+
+        &-item {
+            padding-right: rem(35px);
+            padding-top: rem(20px);
+            padding-bottom: rem(30px);
+
+            .check-wrapper {
+                width: rem(37px);
+                height: rem(37px);
+                line-height: rem(37px);
+                background-color: $color-white-0;
+                border-radius: 50%;
+            }
+
+            .text-left {
+                flex: 1;
+                padding-left: rem(25px);
+
+                p {
+                    display: inline-block;
+                }
+
+                .title {
+                    font-family: Nunito-Bold;
+                    font-size: rem(22px);
+                    letter-spacing: rem(0.88px);
+                    color: $color-purple-0;
+                    margin-bottom: rem(10px);
+                }
+
+                .description {
+                    font-size: rem(16px);
+                    letter-spacing: rem(0.64px);
+                    color: $color-purple-0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .telemedicine__package {
+        &-content {
+            margin-left: rem(50px);
+            margin-right: rem(50px);
+            top: rem(-150px);
+            margin-bottom: 0;
+            overflow: hidden;
+        }
+
+        &-title {
+            padding: 0 rem(10px);
+    
+            .headline {
+                font-size: rem(28px);
+                letter-spacing: rem(1.12px); 
+                margin-bottom: 0;
+            }
+    
+            .title {
+                font-size: rem(21px);
+                letter-spacing: rem(0.84px);
+            }
+
+            .sub-title {
+                font-size: rem(21px);
+                letter-spacing: rem(0.84px);
+                padding: 0 rem(30px);
+            }
+        }
+
+        &-text {
+            &-wrapper {
+                padding: 0 rem(20px);
+                margin-bottom: 0;
+            }
+
+            &-item {
+                padding-right: 0;
+
+                .text-left {
+                    padding-left: rem(10px);
+
+                    .title {
+                        font-size: rem(18px);
+                        letter-spacing: rem(0.72px);
+                    }
+    
+                    .description {
+                        font-size: rem(14px);
+                        letter-spacing: rem(0.56px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .telemedicine__package {
+        &-content {
+            margin-left: rem(20px);
+            margin-right: rem(20px);
+            top: rem(-150px);
+            margin-bottom: 0;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .telemedicine__package {
+        &-content {
+            top: rem(-90px);
+        }
+
+        &-text {
+            padding: 0 rem(10px);
+
+            &-wrapper {
+                padding: 0;
+                margin-bottom: 0;
+            }
+
+            &-item-wrapper:nth-child(odd) {
+                background-color: $color-orange-3;
+            }
+
+            &-item-wrapper:nth-child(even) {
+                background-color: $color-white-0;
+            }
+
+            &-item {
+                padding-right: 0;
+
+                .text-left {
+                    padding-left: rem(10px);
+
+                    .title {
+                        font-size: rem(18px);
+                        letter-spacing: rem(0.72px);
+                    }
+    
+                    .description {
+                        font-size: rem(14px);
+                        letter-spacing: rem(0.56px);
+                    }
+                }
+            }
+        }
+    }
+}

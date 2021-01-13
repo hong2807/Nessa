@@ -15,51 +15,172 @@
 
   <body>
     <div id='signup'>
+        <header class="header d-none d-xl-block">
+            <div class="header__content">
+              <div class="header__logo header__left">
+                <a href="/">
+                  <img src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="header__right">
+                <ul class="d-flex align-items-center">
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/collaborative.html">Collaborative Care</a></li>
+                  <li><a href="/telemedicine.html">Telemedicine</a></li>
+                  <li><a href="/insight.html">Insight</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+                  <a href="/signup.html">
+                    <button class="btn btn-color-pink btn-sign-in">Get Started</button>
+                  </a>
+                  <a href="/signin.html">
+                    <li  class="user-icon"><img  src="./img/user.svg" alt="user"/></li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+        </header>
+        <section class="header-mobile d-block d-xl-none">
+            <div class="header-top-mobile navbar">			            
+              <div class="burger-mobile">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>    
+              <div class="">
+                <a href="/"><img src="./img/logo.png" alt="logo"></a>
+              </div>
+              <a href="/signin.html" class="user-icon">
+                <img  src="./img/user-mobile.svg" alt="user"/>
+              </a>
+          </div>
+            <div class="screen">
+                <!-- <div class="navbar"></div> -->
+                <!-- <div class="circle"></div> -->
+                <div class="menu">
+                  <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/collaborative.html">Collaborative Care</a></li>
+                    <li><a href="/telemedicine.html">Telemedicine</a></li>
+                    <li><a href="/insight.html">Insight</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <a href="/signup.html">
+                      <button class="btn btn-color-pink btn-sign-in">Get Started</button>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+        </section>
 
         <div class="page-content">
-            <section class="signup__form">
-                <div class="container">
-                    <div class="signup__form-content">
-                        <h4>Welcome!</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                        <form>
-                            <div class="form-group signup__item">
-                                <input type="email" class="form-control">
-                                <label>First Name</label>
-                            </div>
-                            <div class="form-group signup__item">
-                                <input type="email" class="form-control">
-                                <label>Last Name</label>
-                            </div>
-                            <div class="form-group signup__item">
-                                <input type="email" class="form-control">
-                                <label>Date of Birth</label>
-                            </div>
-                            <div class="form-group signup__item">
-                                <input type="email" class="form-control">
-                                <label>Email Address</label>
-                            </div>
-                            <div class="form-group signup__item" id="show_hide_password">
-                                <input type="password" class="form-control">
-                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
-                                <label>Password</label>
-                                
-                            </div>
-                            <div class="form-group signup__item" id="show_hide_confirm_password">
-                                <input type="password" class="form-control">
-                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
-                                <label>Confirm Password</label>
-                            </div>
-                            <input type="text" class="form-control" id="example">
+            <section class="signup">  
+                <div class="signup__content">
+                    <div class="signup__title">
+                        <h4 class="title">Welcome!</h4>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                    <form class="signup__form">
+                        <div class="form-group signup__form__item">
+                            <input type="text" class="form-control">
+                            <label>First Name</label>
+                        </div>
+                        <div class="form-group signup__form__item">
+                            <input type="text" class="form-control">
+                            <label>Last Name</label>
+                        </div>
+                        <div class="form-group signup__form__item">
+                            <input type="date" class="form-control">
+                            <label>Date of Birth</label>
+                        </div>
+                        <div class="form-group signup__form__item">
+                            <input type="email" class="form-control">
+                            <label>Email Address</label>
+                        </div>
+                        <div class="form-group signup__form__item" id="show_hide_password">
+                            <input type="password" class="form-control">
+                            <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            <label>Password</label>
+                            
+                        </div>
+                        <div class="form-group signup__form__item" id="show_hide_confirm_password">
+                            <input type="password" class="form-control">
+                            <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            <label>Confirm Password</label>
+                        </div>
+                  
 
-                            <button type="submit" class="btn btn-primary">NEXT</button>
-                        </form>
-                        <p>Already have an account? Sign in</p>
-                        <p>Are you a Client? Sign in</p>
+                        <button type="submit" class="btn btn-next">NEXT</button>
+                    </form>
+                    <div class="group-text">
+                        <p class="text-account-signup">
+                            Already have an account? 
+                            <a href="">Sign in</a>
+                        </p>
+                        <p class="text-client-signup"
+                            >Are you a Client? 
+                            <a href="">Sign in</a>
+                        </p>
                     </div>
                 </div>
             </section>
         </div>
+
+        <footer class="footer">
+          <div class="footer__content">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="footer__item footer__logo">
+                  <a href="/">
+                    <img class="title" src="./img/positive.png"/>
+                  </a>
+                  <p class="sub-title">Experienced doctors just a click away</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="footer__item">
+                  <p class="title">Company</p>
+                  <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/collaborative.html">Collaborative Care</a></li>
+                    <li><a href="/telemedicine.html">Telemedicine</a></li>
+                    <li><a href="/insight.html">Insight</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="footer__item">
+                  <p class="title">Get care</p>
+                  <ul>
+                    <li><a href="">Free Symptom Checker</a></li>
+                    <li><a href="">Chat with a Doctor</a></li>
+                    <li><a href="">Collaborative Care Membership</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Press Releases</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="footer__item footer__contact">
+                  <div>
+                    <p class="title">Follow us</p>
+                    <ul class="footer__icon d-flex justify-content-between">
+                      <li><a href=""><img src="./img/facebook.svg" alt="facebook"/></a></li>
+                      <li><a href=""><img src="./img/instagram.svg" alt="facebook"/></a></i></li>
+                      <li><a href=""><img src="./img/twitter.svg" alt="facebook"/></a></i></li>
+                      <li><a href=""><img src="./img/in.svg" alt="facebook"/></a></i></li>
+                    </ul>
+                  </div>
+                  <ul class="footer__policy">
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom"></div>
+        </footer>
 
     </div>
 
@@ -69,18 +190,37 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <!-- Datetime picker -->
-    <script src="lib/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+     <!--Main JS-->
+     <script src="./js/main.js"></script>
 
     <script>
         $(document).ready(function() {
             $(".signup__item input").blur(function() {
-                if($(this).val() != "") {
+                if($(this).val() !== "") {
+                    $(this).siblings("label").addClass("active");
+                }else {
+                    // $(this).css('color', "transparent");
+                    $(this).siblings("label").removeClass("active");
+                }
+            });
+
+            $(".signup__item input[type=date]").change(function() {
+                if($(this).val() !== "") {
+                    $(this).css('color', "#ccc");
                     $(this).siblings("label").addClass("active");
                 }else {
                     $(this).siblings("label").removeClass("active");
                 }
             });
+
+            // $(".signup__item input[type=date]").focusin(function() {
+            //     // if($(this).val() !== "") {
+            //         $(this).css('color', "black");
+            //     // } else {
+            //     //     $(this).css('color', "transparent");
+            //     // }
+            // });
+
 
 
             $("#show_hide_password i").on('click', function(event) {
@@ -96,10 +236,22 @@
                 }
             });
 
-            $('#example').datetimepicker();
+            $("#show_hide_confirm_password i").on('click', function(event) {
+                event.preventDefault();
+                if($('#show_hide_confirm_password input').attr("type") == "text"){
+                    $('#show_hide_confirm_password input').attr('type', 'password');
+                    $('#show_hide_confirm_password i').addClass( "fa-eye-slash" );
+                    $('#show_hide_confirm_password i').removeClass( "fa-eye" );
+                }else if($('#show_hide_confirm_password input').attr("type") == "password"){
+                    $('#show_hide_confirm_password input').attr('type', 'text');
+                    $('#show_hide_confirm_password i').removeClass( "fa-eye-slash" );
+                    $('#show_hide_confirm_password i').addClass( "fa-eye" );
+                }
+            });
 
         });
     </script>
+    
   </body>
   
 </html>

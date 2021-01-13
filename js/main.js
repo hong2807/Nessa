@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $('.collaborative__slide').slick({
+      $('.collaborative__slide').length > 0 && $('.collaborative__slide').slick({
         arrows: false,
         dots: false,
         infinite: true,
@@ -7,7 +7,7 @@ $( document ).ready(function() {
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 600,
+            breakpoint: 800,
             settings: {
               dots: true,
               slidesToShow: 1,
@@ -17,7 +17,7 @@ $( document ).ready(function() {
         ]
       });
 
-      $('.telemedicine__slide').slick({
+      $('.telemedicine__slide').length > 0 && $('.telemedicine__slide').slick({
         arrows: false,
         dots: false,
         infinite: true,
@@ -25,26 +25,35 @@ $( document ).ready(function() {
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 600,
+            breakpoint: 576,
             settings: {
               dots: true,
               slidesToShow: 1,
               slidesToScroll: 1,
             }
           },
+          {
+            breakpoint: 800,
+            settings: {
+              dots: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
         ]
       });
 
-      $('.mission__slide').slick({
+      $('.mission__slide').length > 0 && $('.mission__slide').slick({
         arrows: false,
         dots: false,
         infinite: false,
         slidesToScroll: 1,
         // centerMode: true,
         variableWidth: true,
+        // rtl: true,
         responsive: [
           {
-            breakpoint: 600,
+            breakpoint: 576,
             settings: {
               dots: true,
               variableWidth: false,
@@ -52,10 +61,19 @@ $( document ).ready(function() {
               slidesToScroll: 1,
             }
           },
+          {
+            breakpoint: 1050,
+            settings: {
+              dots: true,
+              variableWidth: false,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
         ]
       });
 
-      $('.testimonials__slide').slick({
+      $('.testimonials__slide').length > 0 && $('.testimonials__slide').slick({
         arrows: true,
         dots: true,
         infinite: false,
@@ -63,17 +81,26 @@ $( document ).ready(function() {
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 600,
+            breakpoint: 576,
             settings: {
               arrows: false,
               slidesToShow: 1,
               slidesToScroll: 1,
             }
           },
+          {
+            breakpoint: 1050,
+            settings: {
+              arrows: false,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+         
         ]
       });
 
-      $('.industry__slide').slick({
+      $('.industry__slide').length > 0 && $('.industry__slide').slick({
         arrows: false,
         dots: false,
         infinite: true,
@@ -81,21 +108,25 @@ $( document ).ready(function() {
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 600,
+            breakpoint: 576,
             settings: {
               dots: true,
               slidesToShow: 1,
               slidesToScroll: 1,
             }
           },
+          {
+            breakpoint: 1050,
+            settings: {
+              dots: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
         ]
       });
 
-    //   $('.mission__slide').slick({
-    //     initialSlide: $('.mission__slide > .mission__item').length - 1
-    //   });
-
-      $('.values-slide').slick({
+      $('.values-slide').length > 0 && $('.values-slide').slick({
         arrows: false,
         dots: false,
         infinite: true,
@@ -103,10 +134,19 @@ $( document ).ready(function() {
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 600,
+            breakpoint: 576,
             settings: {
               dots: true,
+              variableWidth: false,
               slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              dots: true,
+              slidesToShow: 2,
               slidesToScroll: 1,
             }
           },

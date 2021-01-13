@@ -1,21 +1,139 @@
-.signin__form {
-    .signin__item {
-        position: relative;
+.signin {
+    background: url('../img/Path 1041.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 
-        .form-control:focus {
-            box-shadow: unset;
-        }
+    &__content {
+        margin: rem(85px) rem(690px);
+        padding: rem(90px) rem(60px);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+        background-color: $color-white-0;
+    }
 
-        input {
-            padding-right: 35px;
-        }
-
-        i {
-            position: absolute;
-            right: 12px;
-            top: 10px;
+    &__title {
+        .title {
+            font-family: Nunito-Bold;
+            font-size: rem(21px);
+            letter-spacing: rem(0.84px);
+            color: $color-purple-0;
+            margin-bottom: rem(40px);
         }
     }
 
-  
+    &__form {
+        &__item {
+            position: relative;
+            margin-bottom: rem(30px);
+
+            &:focus-within {
+                input:focus {
+                    border: 2px solid $color-pink-0;
+                }
+        
+                input:focus ~ label {
+                    top: 0;
+                    background-color: $color-white-0;
+                    color: $color-pink-0;
+                    opacity: 1;
+                }
+            }
+    
+            label {
+                position: absolute;
+                left: 65px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.3s;
+                font-family: Montserrat-Medium;
+                font-size: rem(17px);
+                letter-spacing: rem(0.68px);
+                color: $color-purple-0;
+            }
+
+            img {
+                position: absolute;
+                left: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.3s;
+            }
+
+            
+    
+            label.active {
+                top: 0;
+                background-color: $color-white-0;
+                opacity: 1;
+            }
+    
+            .form-control:focus {
+                box-shadow: unset;
+            }
+    
+            input {
+                padding-right: 35px;
+                height: rem(71px);
+                border-radius: 20px;
+                border: 1px solid $color-purple-0;
+            }
+    
+            i {
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $color-grey-0;
+            }
+        }
+
+        .text-forgot {
+            font-family: Montserrat-Medium;
+            font-size: rem(16px);
+            letter-spacing: rem(0.64px);
+            text-align: right;
+        }
+
+        .btn-login {
+            width: 100%;
+            height: rem(70px);
+            background-color: $color-orange-0;
+            border-radius: 20px;
+            color: $color-white-0;
+            font-family: Montserrat-Bold;
+            font-size: rem(16px);
+            letter-spacing: rem(0.64px);
+            margin-top: rem(35px);
+            margin-bottom: rem(65px);
+        }
+
+    }
+
+    .group-text {
+        p {
+            font-family: Montserrat-SemiBold;
+            font-size: rem(16px);
+            letter-spacing: rem(0.64px);
+            color: $color-purple-0;
+        }
+
+        a {
+            font-family: Montserrat-Medium;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .signin {
+    
+        &__content {
+            margin: 0;
+            padding: rem(70px) rem(30px);
+            box-shadow: unset;
+        }
+
+        
+    }
 }

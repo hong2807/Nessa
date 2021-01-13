@@ -21,7 +21,7 @@
 
   <body>
     <div id='about'>
-      <header class="header d-none d-md-block">
+      <header class="header d-none d-xl-block">
         <div class="header__content">
           <div class="header__logo header__left">
             <a href="/">
@@ -35,52 +35,52 @@
               <li><a href="/telemedicine.html">Telemedicine</a></li>
               <li><a href="/insight.html">Insight</a></li>
               <li><a href="/contact.html">Contact</a></li>
-              <a href="/signin.html">
+              <a href="/signup.html">
                 <button class="btn btn-color-pink btn-sign-in">Get Started</button>
               </a>
-              <a href="/signup.html">
+              <a href="/signin.html">
                 <li  class="user-icon"><img  src="./img/user.svg" alt="user"/></li>
               </a>
             </ul>
           </div>
         </div>
-  </header>
-  <section class="header-mobile d-block d-md-none">
-    <div class="header-top-mobile navbar">			            
-      <div class="burger-mobile">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>    
-      <div class="">
-        <a href="/"><img src="./img/logo.png" alt="logo"></a>
+      </header>
+      <section class="header-mobile d-block d-xl-none">
+        <div class="header-top-mobile navbar">			            
+          <div class="burger-mobile">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>    
+          <div class="">
+            <a href="/"><img src="./img/logo.png" alt="logo"></a>
+          </div>
+          <a href="/signin.html" class="user-icon">
+            <img  src="./img/user-mobile.svg" alt="user"/>
+          </a>
       </div>
-      <a href="/signup.html" class="user-icon">
-        <img  src="./img/user-mobile.svg" alt="user"/>
-      </a>
-  </div>
-    <div class="screen">
-        <!-- <div class="navbar"></div> -->
-        <!-- <div class="circle"></div> -->
-        <div class="menu">
-          <ul>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/collaborative.html">Collaborative Care</a></li>
-            <li><a href="/telemedicine.html">Telemedicine</a></li>
-            <li><a href="/insight.html">Insight</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <a href="/signin.html">
-              <button class="btn btn-color-pink btn-sign-in">Get Started</button>
-            </a>
-          </ul>
-        </div>
-      </div>
-  </section>
+        <div class="screen">
+            <!-- <div class="navbar"></div> -->
+            <!-- <div class="circle"></div> -->
+            <div class="menu">
+              <ul>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/collaborative.html">Collaborative Care</a></li>
+                <li><a href="/telemedicine.html">Telemedicine</a></li>
+                <li><a href="/insight.html">Insight</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <a href="/signup.html">
+                  <button class="btn btn-color-pink btn-sign-in">Get Started</button>
+                </a>
+              </ul>
+            </div>
+          </div>
+      </section>
 
       <div class="page-content">
-        <section class="about__hero-section">
-          <div class="about__hero-section-content container-vertical">
-            <div class="about__hero-section-text">
+        <section class="hero-section">
+          <div class="hero-section-content container-vertical">
+            <div class="hero-section-text">
               <p class="title-small">OUR STORY</p>
               <h2 class="title-white-large">Simplify healthcare for greater outreach</h2>
             </div>
@@ -115,7 +115,7 @@
               </ul>
             </div>
             <div class="tab-content">
-              <div class="tab-pane tab-pane-values fase show active" id="values" role="tabpanel" aria-labelledby="values-tab">
+              <div class="tab-pane tab-pane-values fade show active" id="values" role="tabpanel" aria-labelledby="values-tab">
                 <div class="values-slide">
                     <div class="values-item">
                       <div class="title">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
               </div>
-              <div class="tab-pane tab-pane-philosophy fase" id="philosophy" role="tabpanel" aria-labelledby="philosophy-tab">
+              <div class="tab-pane tab-pane-philosophy fade" id="philosophy" role="tabpanel" aria-labelledby="philosophy-tab">
                 <div class="philosophy-content">
                   <div class="philosophy-item">
                     <h4 class="title">Our philosophy on today’s healthcare landscape</h4>
@@ -324,25 +324,27 @@
       <footer class="footer">
         <div class="footer__content">
           <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-xl-3">
               <div class="footer__item footer__logo">
-                <img class="title" src="./img/positive.png"/>
+                <a href="/">
+                  <img class="title" src="./img/positive.png"/>
+                </a>
                 <p class="sub-title">Experienced doctors just a click away</p>
               </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-xl-3">
               <div class="footer__item">
                 <p class="title">Company</p>
                 <ul>
-                  <li><a href="">About</a></li>
-                  <li><a href="">Collaborative Care</a></li>
-                  <li><a href="">Telemedicine</a></li>
-                  <li><a href="">Insight</a></li>
-                  <li><a href="">Contact</a></li>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/collaborative.html">Collaborative Care</a></li>
+                  <li><a href="/telemedicine.html">Telemedicine</a></li>
+                  <li><a href="/insight.html">Insight</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-xl-3">
               <div class="footer__item">
                 <p class="title">Get care</p>
                 <ul>
@@ -354,7 +356,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-xl-3">
               <div class="footer__item footer__contact">
                 <div>
                   <p class="title">Follow us</p>

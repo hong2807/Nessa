@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     z-index: 100;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
 
     .header-top-mobile {
         align-items: center;
@@ -23,8 +24,8 @@
     }
     
     .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 3px;
+        width: rem(35px);
+        height: rem(3px);
         background-color: $color-pink-0;
         margin: 6px 0;
         transition: 0.4s;

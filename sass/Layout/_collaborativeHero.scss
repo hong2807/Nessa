@@ -31,8 +31,59 @@
     }
 }
 
+// Page Telemedicine
+#telemedicine {
+    .collaborative__hero-section {
+        background-image: url('../img/Group 2343.jpg');
+
+        .container-vertical {
+            padding-bottom: rem(120px);
+        }
+    
+        &-text {
+            max-width: rem(1050px);
+
+            .title-white {
+                font-size: rem(40px);
+                margin-top: rem(20px);
+                margin-bottom: rem(75px);
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .collaborative__hero-section {
+
+            .container-vertical {
+                padding-left: rem(20px);
+                padding-right: rem(20px);
+                padding-top: rem(80px);
+                padding-bottom: rem(100px);
+            }
+            
+            .title-white {
+                font-size: rem(24px);
+                letter-spacing: rem(0.96px);
+            }
+
+            .description {
+                font-size: rem(16px);
+                letter-spacing: rem(0.64px);
+                line-height: rem(26px);
+            }
+    }
+}
+
 @media (max-width: 576px) {
     .collaborative__hero-section {
-    
+        background-image: url('../img/Group 2375.jpg'); 
+    }
+
+    #telemedicine {
+        .collaborative__hero-section {
+            background-image: url('../img/Group 2376.jpg');
+        }
     }
 }

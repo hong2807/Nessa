@@ -45,7 +45,15 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
+    .services {
+        &__content {
+            padding: rem(70px) rem(50px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
     .services {
         &__content {
             padding: rem(70px) rem(20px);

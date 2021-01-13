@@ -27,11 +27,11 @@
     }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 1024px) { 
     .about__mission {
         &-content {
-            padding-left: rem(20px);
-            padding-right: rem(20px);
+            padding-left: rem(50px);
+            padding-right: rem(50px);
         }
 
         .container-vertical {
@@ -54,4 +54,13 @@
             }
         }
     } 
+}
+
+@media (max-width: 768px) { 
+    .about__mission {
+        &-content {
+            padding-left: rem(20px);
+            padding-right: rem(20px);
+        }
+    }
 }

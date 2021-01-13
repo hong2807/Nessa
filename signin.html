@@ -13,28 +13,151 @@
 
   <body>
     <div id='signin'>
+        <header class="header d-none d-xl-block">
+            <div class="header__content">
+              <div class="header__logo header__left">
+                <a href="/">
+                  <img src="./img/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="header__right">
+                <ul class="d-flex align-items-center">
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/collaborative.html">Collaborative Care</a></li>
+                  <li><a href="/telemedicine.html">Telemedicine</a></li>
+                  <li><a href="/insight.html">Insight</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+                  <a href="/signup.html">
+                    <button class="btn btn-color-pink btn-sign-in">Get Started</button>
+                  </a>
+                  <a href="/signin.html">
+                    <li  class="user-icon"><img  src="./img/user.svg" alt="user"/></li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+        </header>
+        <section class="header-mobile d-block d-xl-none">
+            <div class="header-top-mobile navbar">			            
+              <div class="burger-mobile">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>    
+              <div class="">
+                <a href="/"><img src="./img/logo.png" alt="logo"></a>
+              </div>
+              <a href="/signin.html" class="user-icon">
+                <img  src="./img/user-mobile.svg" alt="user"/>
+              </a>
+          </div>
+            <div class="screen">
+                <!-- <div class="navbar"></div> -->
+                <!-- <div class="circle"></div> -->
+                <div class="menu">
+                  <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/collaborative.html">Collaborative Care</a></li>
+                    <li><a href="/telemedicine.html">Telemedicine</a></li>
+                    <li><a href="/insight.html">Insight</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <a href="/signup.html">
+                      <button class="btn btn-color-pink btn-sign-in">Get Started</button>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+        </section>
 
         <div class="page-content">
-            <section class="signin__form">
-                <div class="container">
-                    <div class="signin__form-content">
-                        <p>Sign in to your account</p>
-                        <form>
-                            <div class="form-group signin__item">
-                                <input type="email" class="form-control" placeholder="Email Address">
-                            </div>
-                            <div class="form-group signin__item" id="show_hide_password">
-                                <input type="password" class="form-control" placeholder="Password">
-                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
-                            </div>
-                            <p>Forgot password?</p>
-                            <button type="submit" class="btn btn-primary">LOGIN</button>
-                        </form>
-                        <p>Don't have an acount yet? Creat one.</p>
-                    </div>
+          <section class="signin">  
+            <div class="signin__content">
+                <div class="signin__title">
+                    <h4 class="title">Sign in to your account</h4>
                 </div>
-            </section>
+                <form class="signin__form">
+                    <div class="form-group signin__form__item">
+                        <img src="./img/email icon.svg"/>
+                        <input type="email" class="form-control">
+                        <label>Email Address</label>
+                    </div>
+                    <div class="form-group signin__form__item" id="show_hide_password">
+                        <img src="./img/pass icon.svg"/>
+                        <input type="password" class="form-control">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        <label>Password</label>
+                    </div>
+              
+                    <p class="text-forgot">Forgot password?</p>
+                    <button type="submit" class="btn btn-login">LOGIN</button>
+                </form>
+                <div class="group-text">
+                    <p class="text-account-signin">
+                        Don't have an account yet? 
+                        <a href="">Create one.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
         </div>
+
+        <footer class="footer">
+          <div class="footer__content">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="footer__item footer__logo">
+                  <a href="/">
+                    <img class="title" src="./img/positive.png"/>
+                  </a>
+                  <p class="sub-title">Experienced doctors just a click away</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="footer__item">
+                  <p class="title">Company</p>
+                  <ul>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/collaborative.html">Collaborative Care</a></li>
+                    <li><a href="/telemedicine.html">Telemedicine</a></li>
+                    <li><a href="/insight.html">Insight</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="footer__item">
+                  <p class="title">Get care</p>
+                  <ul>
+                    <li><a href="">Free Symptom Checker</a></li>
+                    <li><a href="">Chat with a Doctor</a></li>
+                    <li><a href="">Collaborative Care Membership</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Press Releases</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-3">
+                <div class="footer__item footer__contact">
+                  <div>
+                    <p class="title">Follow us</p>
+                    <ul class="footer__icon d-flex justify-content-between">
+                      <li><a href=""><img src="./img/facebook.svg" alt="facebook"/></a></li>
+                      <li><a href=""><img src="./img/instagram.svg" alt="facebook"/></a></i></li>
+                      <li><a href=""><img src="./img/twitter.svg" alt="facebook"/></a></i></li>
+                      <li><a href=""><img src="./img/in.svg" alt="facebook"/></a></i></li>
+                    </ul>
+                  </div>
+                  <ul class="footer__policy">
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom"></div>
+        </footer>
 
     </div>
 
@@ -69,6 +192,8 @@
            
         });
     </script>
+    <!--Main JS-->
+    <script src="./js/main.js"></script>
   </body>
   
 </html>

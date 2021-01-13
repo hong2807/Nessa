@@ -87,8 +87,16 @@
       
 }
 
+@media (max-width: 1024px) {
+    .testimonials {
+        &__content {
+            padding: rem(70px) rem(50px);
+        }
+    }
+}
 
-@media (max-width: 576px) {
+
+@media (max-width: 768px) {
     .testimonials {
         .title-large {
             font-size: rem(30px) !important;

@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    src: url(../font/Raleway/Raleway-MediumItalic.ttf) format('truetype');
+    font-family: Raleway-MediumItalic;
+}
+
+@font-face {
     src: url(../font/Raleway/Raleway-Regular.ttf) format('truetype');
     font-family: Raleway-Regular;
 }
@@ -38,6 +43,21 @@
     font-family: Nunito-SemiBoldItalic;
 }
 
+@font-face {
+    src: url(../font/Montserrat/Montserrat-Medium.ttf) format('truetype');
+    font-family: Montserrat-Medium;
+}
+
+@font-face {
+    src: url(../font/Montserrat/Montserrat-Bold.ttf) format('truetype');
+    font-family: Montserrat-Bold;
+}
+
+@font-face {
+    src: url(../font/Montserrat/Montserrat-SemiBold.ttf) format('truetype');
+    font-family: Montserrat-SemiBold;
+}
+
 
 
 html {
@@ -46,6 +66,7 @@ html {
 
 body {
     font-family: Raleway-Medium;
+    color: $color-purple-0;
 }
 
 ul {
@@ -73,8 +94,8 @@ a:hover {
     &::after {
         content: "";
         display: block;
-        width: 30px;
-        height: 3px;
+        width: rem(30px);
+        height: rem(3px);
         background-color: $color-pink-0;
         position: absolute;
         top: 35px;
@@ -205,6 +226,8 @@ a:hover {
 
 .page-content {
     .slick-prev {
+        width: 30px;
+        height: 30px;
         border: solid 4px #271c3f;
         border-top: 0;
         border-right: 0;
@@ -221,6 +244,8 @@ a:hover {
     }
 
     .slick-next {
+        width: 30px;
+        height: 30px;
         border: solid 4px #271c3f;
         border-top: 0;
         border-right: 0;

@@ -124,17 +124,46 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
     .collaborative__telemedicine {
         &-content {
-            padding-left: 0;
-            padding-right: 0;
+            padding-left: rem(50px);
+            padding-right: rem(50px);
+            padding-top: rem(80px);
         }
+
+        &-top {
+            padding: 0 rem(80px);
+            text-align: center;
+
+            h4 {
+                font-size: rem(18px);
+                letter-spacing: rem(0.54px);
+            }
+        }
+
+        
 
         &-benefit {
             .row {
                 margin-left: -15px;
                 margin-right: -15px;
+            }
+
+            &-item {
+                margin-bottom: rem(75px);
+
+                .title {
+                    font-size: rem(18px);
+                    letter-spacing: rem(0.72px);
+                    margin-top: rem(25px);
+                    margin-bottom: rem(15px);
+                }
+
+                .description {
+                    font-size: rem(14px);
+                    letter-spacing: rem(0.56px);
+                }
             }
         }
 
@@ -143,11 +172,77 @@
                 width: 100%;
             }
 
+            .headline-wrapper {
+                padding: 0 rem(75px);
+            }
+
+            // .order {
+            //     order: 1;
+            // }
+
+            .headline {
+                font-size: rem(18px);
+                letter-spacing: rem(0.72px);
+                padding: rem(18px) rem(23px);
+            }
+
             &-item {
+                margin-top: rem(60px);
+                margin-bottom: rem(60px);
+                padding: 0 rem(20px);
+
                 .timeline-text {
                     padding-left: 0;
+                }
+
+                .timeline-text.second {
+                    padding-right: 0;
+                }
+
+                .title {
+                    font-size: rem(10px);
+                    letter-spacing: rem(1.2px);
+                }
+    
+                .sub-title {
+                    font-size: rem(18px);
+                    letter-spacing: rem(0.72px);
+                    line-height: rem(30px);
+                }
+    
+                .description {
+                    font-size: rem(14px);
+                    letter-spacing: rem(0.56px);
+                    line-height: rem(24px);
                 }
             }
         }
     }
 }
+
+@media (max-width: 768px) {
+    .collaborative__telemedicine {
+        &-content {
+            padding-left: rem(15px);
+            padding-right: rem(15px);
+            padding-top: rem(80px);
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    
+    .collaborative__telemedicine {
+        &-bottom {
+            height: rem(200px);
+        }
+        
+        &-timeline {
+            .order {
+                order: 1;
+            }
+        }
+    }
+}
+
