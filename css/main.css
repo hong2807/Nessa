@@ -104,8 +104,7 @@ a:hover {
 }
 
 .title-small {
-  font-family: Nunito-SemiBold;
-  font-style: italic;
+  font-family: Nunito-SemiBoldItalic;
   text-transform: uppercase;
   color: #f1737f;
   font-size: 0.875rem;
@@ -2712,9 +2711,10 @@ a:hover {
   transform: translateY(-50%);
   transition: all 0.3s;
   font-family: Montserrat-Medium;
-  font-size: 1.0625rem;
-  letter-spacing: 0.0425rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.03rem;
   color: #271c3f;
+  opacity: 0.47;
 }
 
 .signin__form__item img {
@@ -2737,9 +2737,8 @@ a:hover {
 
 .signin__form__item input {
   padding-right: 35px;
-  height: 4.4375rem;
-  border-radius: 20px;
-  border: 1px solid #271c3f;
+  height: 3.4375rem;
+  border-radius: 25px;
 }
 
 .signin__form__item i {
@@ -2758,34 +2757,40 @@ a:hover {
 }
 
 .signin__form .btn-login {
-  width: 100%;
-  height: 4.375rem;
+  width: 12.5rem;
+  height: 3.125rem;
   background-color: #f8b28e;
-  border-radius: 20px;
+  border-radius: 30px;
   color: #ffffff;
   font-family: Montserrat-Bold;
-  font-size: 1rem;
-  letter-spacing: 0.04rem;
-  margin-top: 2.1875rem;
-  margin-bottom: 4.0625rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.03rem;
+  margin-top: 1.25rem;
+  margin-bottom: 2.1875rem;
 }
 
 .signin .group-text p {
-  font-family: Montserrat-SemiBold;
-  font-size: 1rem;
-  letter-spacing: 0.04rem;
-  color: #271c3f;
-}
-
-.signin .group-text a {
   font-family: Montserrat-Medium;
+  font-size: 0.75rem;
+  letter-spacing: 0.03rem;
+  color: #3e5665;
 }
 
-@media (max-width: 768px) {
+.signin .group-text p a {
+  color: #f8b28e;
+}
+
+@media (max-width: 1024px) {
   .signin__content {
     margin: 0;
-    padding: 4.375rem 1.875rem;
+    padding: 4.375rem 9.375rem;
     box-shadow: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  .signin__content {
+    padding: 4.375rem 1.875rem;
   }
 }
 
@@ -2910,10 +2915,10 @@ a:hover {
   color: #f8b28e;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .signup__content {
     margin: 0;
-    padding: 4.375rem 1.875rem;
+    padding: 4.375rem 9.375rem;
     box-shadow: unset;
   }
   .signup__title .title {
@@ -2931,15 +2936,25 @@ a:hover {
   }
 }
 
-.questions {
-  background-image: url("../img/Mask Group 24.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media (max-width: 576px) {
+  .signup__content {
+    padding: 4.375rem 1.875rem;
+  }
 }
 
 .questions__content {
+  background-image: url("../img/Mask Group 24.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-left: 20.3125rem;
   padding-right: 20.3125rem;
+}
+
+.questions__title {
+  padding-left: 20.3125rem;
+  padding-right: 20.3125rem;
+  padding-top: 5.625rem;
+  text-align: center;
 }
 
 .questions__title .title-large {
@@ -2962,6 +2977,7 @@ a:hover {
   color: #271c3f;
   padding: 0;
   margin: 0.5rem 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .questions .tab-name .nav-link.active {
@@ -2976,7 +2992,7 @@ a:hover {
   height: 0.3125rem;
   background-color: #f1737f;
   position: absolute;
-  top: 67px;
+  top: 63px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -3009,11 +3025,21 @@ a:hover {
   .questions__content {
     padding: 4.375rem 3.125rem;
   }
+  .questions__title {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    padding-top: 4.375rem;
+  }
 }
 
 @media (max-width: 768px) {
   .questions__content {
     padding: 4.375rem 1.25rem;
+  }
+  .questions__title {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 4.375rem;
   }
   .questions__title .title-large {
     padding: 0;
@@ -3038,11 +3064,21 @@ a:hover {
     font-size: 0.875rem;
     letter-spacing: 0.035rem;
   }
+  .questions .tab-name .nav-link.active::after {
+    top: 57px;
+  }
 }
 
 @media (max-width: 576px) {
+  .questions .tab-name .nav {
+    align-items: unset;
+  }
   .questions .tab-name .nav-link {
     margin: 0;
+    padding-bottom: 20px;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
   }
 }
 
@@ -3292,6 +3328,12 @@ a:hover {
 
 #insight .hero-section {
   background-image: url("../img/Mask Group 26.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact .hero-section {
+  background-image: url("../img/Mask Group 27.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -3597,6 +3639,177 @@ a:hover {
 @media (max-width: 576px) {
   .category__content {
     padding: 4.375rem 1.25rem;
+  }
+}
+
+.contact__content {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 4.6875rem;
+  padding-bottom: 6.5625rem;
+}
+
+.contact__left {
+  margin-top: 2.8125rem;
+}
+
+.contact__left .title {
+  font-family: Raleway-ExtraBold;
+  font-size: 0.75rem;
+  letter-spacing: 0.09rem;
+  color: #271c3f;
+  margin-bottom: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.contact__left img {
+  width: 1.25rem;
+}
+
+.contact__left span, .contact__left p {
+  font-size: 1.0625rem;
+  letter-spacing: 0.0425rem;
+  line-height: 2.75rem;
+  color: #271c3f;
+  margin-bottom: 0;
+}
+
+.contact__left .info div {
+  margin-left: 0.9375rem;
+}
+
+.contact__left .contact__email {
+  margin-bottom: 0.9375rem;
+}
+
+.contact__left .contact__email span {
+  margin-left: 0.9375rem;
+}
+
+.contact__left .contact__partner {
+  margin: 3.125rem 0;
+}
+
+.contact__left .contact__partner p {
+  word-break: break-all;
+}
+
+.contact__left .contact__sales p {
+  word-break: break-all;
+}
+
+.contact__right {
+  background-color: #fff5f0;
+  border-radius: 20px;
+  padding: 3.75rem 10rem;
+  text-align: center;
+}
+
+.contact__right .title {
+  font-family: Nunito-Bold;
+  font-size: 2.625rem;
+  letter-spacing: 0.105rem;
+  color: #271c3f;
+}
+
+.contact__right .sub-title {
+  font-size: 1.3125rem;
+  letter-spacing: 0.0525rem;
+  color: #271c3f;
+  margin-bottom: 3.125rem;
+}
+
+.contact__form input {
+  height: 4.0625rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: unset;
+  padding-left: 1.25rem;
+}
+
+.contact__form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 0.875rem;
+  letter-spacing: 0.035rem;
+  color: #c8d1dc;
+}
+
+.contact__form textarea {
+  resize: none;
+  border: unset;
+  padding-left: 1.25rem;
+  padding-top: 1.4375rem;
+}
+
+.contact__form .btn-color-orange {
+  height: 3.5625rem;
+  margin-top: 1.5625rem;
+}
+
+@media (max-width: 1024px) {
+  .contact__content {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    padding-top: 2.5rem;
+  }
+  .contact__right {
+    padding: 4.6875rem 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__content {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    padding-top: 2.5rem;
+  }
+  .contact__left {
+    padding: 0 1.25rem;
+    margin-bottom: 4.0625rem;
+  }
+  .contact__left .title {
+    font-size: 0.625rem;
+    letter-spacing: 0.075rem;
+  }
+  .contact__left span, .contact__left p {
+    font-size: 1.125rem;
+    letter-spacing: 0.045rem;
+    line-height: 1.6875rem;
+    color: #271c3f;
+  }
+  .contact__left .contact__phone {
+    margin-bottom: 1.5625rem;
+  }
+  .contact__left .contact__partner {
+    margin: 2.1875rem 0;
+  }
+  .contact__right {
+    padding: 4.6875rem 1.25rem;
+    border-radius: unset;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact__right .title {
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+  }
+  .contact__right .sub-title {
+    font-family: Raleway-Bold;
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+    margin-bottom: 1.875rem;
+  }
+  .contact__form .btn-color-orange {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact__right {
+    padding: 4.6875rem 1.25rem;
+    border-radius: unset;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -73,6 +73,7 @@ $( document ).ready(function() {
         ]
       });
 
+      // $('.mission__slide').slick('slickGoTo', 3);
       $('.testimonials__slide').length > 0 && $('.testimonials__slide').slick({
         arrows: true,
         dots: true,

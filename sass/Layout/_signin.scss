@@ -47,9 +47,10 @@
                 transform: translateY(-50%);
                 transition: all 0.3s;
                 font-family: Montserrat-Medium;
-                font-size: rem(17px);
-                letter-spacing: rem(0.68px);
+                font-size: rem(12px);
+                letter-spacing: rem(0.48px);
                 color: $color-purple-0;
+                opacity: 0.47;
             }
 
             img {
@@ -74,9 +75,8 @@
     
             input {
                 padding-right: 35px;
-                height: rem(71px);
-                border-radius: 20px;
-                border: 1px solid $color-purple-0;
+                height: rem(55px);
+                border-radius: 25px;
             }
     
             i {
@@ -96,44 +96,51 @@
         }
 
         .btn-login {
-            width: 100%;
-            height: rem(70px);
+            width: rem(200px);
+            height: rem(50px);
             background-color: $color-orange-0;
-            border-radius: 20px;
+            border-radius: 30px;
             color: $color-white-0;
             font-family: Montserrat-Bold;
-            font-size: rem(16px);
-            letter-spacing: rem(0.64px);
-            margin-top: rem(35px);
-            margin-bottom: rem(65px);
+            font-size: rem(12px);
+            letter-spacing: rem(0.48px);
+            margin-top: rem(20px);
+            margin-bottom: rem(35px);
         }
 
     }
 
     .group-text {
         p {
-            font-family: Montserrat-SemiBold;
-            font-size: rem(16px);
-            letter-spacing: rem(0.64px);
-            color: $color-purple-0;
-        }
-
-        a {
             font-family: Montserrat-Medium;
+            font-size: rem(12px);
+            letter-spacing: rem(0.48px);
+            color: $color-green-0;
+
+            a {
+                color: $color-orange-0;
+            }
         }
     }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .signin {
-    
         &__content {
             margin: 0;
-            padding: rem(70px) rem(30px);
+            padding: rem(70px) rem(150px);
             box-shadow: unset;
         }
 
         
+    }
+}
+
+@media (max-width: 576px) {
+    .signin {
+        &__content {
+            padding: rem(70px) rem(30px);
+        }
     }
 }

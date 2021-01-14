@@ -160,12 +160,11 @@ input:focus::-webkit-datetime-edit{ color: #000 !important; }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .signup {
-    
         &__content {
             margin: 0;
-            padding: rem(70px) rem(30px);
+            padding: rem(70px) rem(150px);
             box-shadow: unset;
         }
 
@@ -188,6 +187,15 @@ input:focus::-webkit-datetime-edit{ color: #000 !important; }
                     right: 30px; 
                 }
             } 
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .signup {
+        &__content {
+            padding: rem(70px) rem(30px);
+    
         }
     }
 }

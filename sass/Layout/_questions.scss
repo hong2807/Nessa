@@ -1,14 +1,23 @@
 .questions {
-    background-image: url('../img/Mask Group 24.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: url('../img/Mask Group 24.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    
     
     &__content {
+        background-image: url('../img/Mask Group 24.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
         padding-left: rem(325px);
         padding-right: rem(325px);
     }
 
     &__title {
+        padding-left: rem(325px);
+        padding-right: rem(325px);
+        padding-top: rem(90px);
+        text-align: center;
+
         .title-large {
             font-size: rem(38px);
             letter-spacing: rem(1.52px);
@@ -29,6 +38,7 @@
             color: $color-purple-0;
             padding: 0;
             margin: rem(8px) rem(16px);
+            margin-bottom: rem(40px);
         }
 
         .nav-link.active {
@@ -42,7 +52,7 @@
                 height: rem(5px);
                 background-color: #f1737f;
                 position: absolute;
-                top: 67px;
+                top: 63px;
                 left: 50%;
                 transform: translateX(-50%);
                 
@@ -83,6 +93,12 @@
         &__content {
             padding: rem(70px) rem(50px);
         }
+
+        &__title {
+            padding-left: rem(50px);
+            padding-right: rem(50px);
+            padding-top: rem(70px);
+        }
     }
 }
 
@@ -93,6 +109,10 @@
         }
 
         &__title {
+            padding-left: rem(20px);
+            padding-right: rem(20px);
+            padding-top: rem(70px);
+
             .title-large {
                 padding: 0;
             }
@@ -125,6 +145,12 @@
                 font-size: rem(14px);
                 letter-spacing: rem(0.56px);
             }
+
+            .nav-link.active {
+                &::after {
+                    top: 57px;
+                }
+            }
         }
     }
 }
@@ -132,8 +158,16 @@
 @media (max-width: 576px) {
     .questions {
         .tab-name {
+            .nav {
+                align-items: unset;
+            }
+
             .nav-link {
                 margin: 0;
+                padding-bottom: 20px;
+                display: flex;
+                height: 100%;
+                align-items: flex-end;
             }
         }
     }

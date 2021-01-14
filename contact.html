@@ -15,8 +15,8 @@
   </head>
 
   <body>
-    <div id='contact'>
-        <header class="header d-none d-md-block">
+    <div>
+        <header class="header d-none d-xl-block">
             <div class="header__content">
               <div class="header__logo header__left">
                 <a href="/">
@@ -40,7 +40,7 @@
               </div>
             </div>
         </header>
-        <section class="header-mobile d-block d-md-none">
+        <section class="header-mobile d-block d-xl-none">
             <div class="header-top-mobile navbar">			            
               <div class="burger-mobile">
                 <div class="bar1"></div>
@@ -72,71 +72,155 @@
               </div>
         </section>
 
-        <div class="page-content">
-            <section class="contact__form">
-              <div class="container">
-                <div>
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="contact__form-left">
-                                <h6>GENERAL INQUIRES</h6>
+        <div class="page-content" id='contact'>
+          <section class="hero-section">
+            <div class="hero-section-content container-vertical">
+              <div class="hero-section-text">
+                <p class="title-small">CONTACT US</p>
+                <h2 class="title-white-large">
+                  We’ve made improving your health easier
+                </h2>
+              </div>
+            </div>
+          </section>
+
+          <section class="contact">
+            <div class="contact__content">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+                        <div class="contact__left">
+                            <h6 class="title">GENERAL INQUIRES</h6>
+                            <div class="contact__email">
+                                <img src="./img/0tubnA.svg"/>
+                                <span>info@nessamd.com</span>
+                            </div>
+                            <div class="d-flex align-items-baseline info contact__phone">
+                                <img src="./img/246xoz.svg"/>
                                 <div>
-                                    <i class="fas fa-envelope"></i>
-                                    <span>info@nessamd.com</span>
-                                </div>
-                                <div>
-                                    <i class="fas fa-phone-volume"></i>
                                     <span>1-800-123-4567</span>
-                                 
+                                    <p class="mb-0">8am - 5pm PST</p>
                                 </div>
+                            </div>
+                            <div class="d-flex align-items-baseline info contact__chat">
+                                <img src="./img/gosFMt.svg"/>
                                 <div>
-                                    <i class="fas fa-comments"></i>
-                                    <span>info@nessamd.com</span>
+                                    <span>Live Chat!</span>
+                                    <p class="mb-0">8am - 5pm PST</p>
                                 </div>
-                                <h6>PARTNERSHIP</h6>
+                            </div>
+                            <div class="contact__partner">
+                                <h6 class="title">PARTNERSHIP</h6>
                                 <p>partnerships@nessamd.com</p>
-                                <h6>SALES</h6>
+                            </div>
+                            <div class="contact__sales">
+                                <h6 class="title">SALES</h6>
                                 <p>sales@nessamd.com</p>
                             </div>
                         </div>
-                        <div class="col-9">
-                            <div class="contact__right">
-                                <p>Primary Care</p>
-                                <p>We are here to help. Please fill in the fields belows:</p>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+                        <div class="contact__right">
+                            <p class="title">Send us a message.</p>
+                            <p class="sub-title">We are here to help. Please fill in the fields below:</p>
+                            <form class="contact__form">
+                            <div class="form-group contact__item">
+                                <input type="text" class="form-control" placeholder="Your Full Name">
                             </div>
-                            <form>
-                                <div class="form-group contact__item">
-                                    <input type="text" class="form-control" placeholder="Your Full Name">
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="form-group contact__item">
-                                            <input type="email" class="form-control" placeholder="Email Address">
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group contact__item">
-                                            <input type="text" class="form-control" placeholder="Phone Number">
-                                        </div>
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                                    <div class="form-group contact__item">
+                                        <input type="email" class="form-control" placeholder="Email Address">
                                     </div>
                                 </div>
-                                <div class="form-group contact__item">
-                                    <textarea  class="form-control" placeholder="Your Message" style="resize: none;"></textarea>
+                                <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                                    <div class="form-group contact__item">
+                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                    </div>
                                 </div>
-                               
-                                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
-                            </form>
+                            </div>
+                            <div class="form-group contact__item">
+                                <textarea  class="form-control" placeholder="Your Message" rows="7"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-color-orange">SEND MESSAGE</button>
+                        </form>
                         </div>
                     </div>
                 </div>
+            </div>
+          </section>
+
+          <section class="feeling">
+            <div class="feeling__content d-flex justify-content-center align-items-center">
+              <h2 class="feeling__title">How are you feeling today?</h2>
+              <button class="btn btn-border-white-large btn-chat">Chat with a Doctor</button>
+            </div>
+          </section>
+
+          <section class="industry">
+            <div class="industry__content container-vertical">
+              <div class="industry__title text-center">
+                <p class="title-small">INDUSTRY INSIGHT</p>
+                <h2 class="title-large">Health that is real wealth</h2>
               </div>
-            </section>
+              <div class="industry__slide">
+                <div class="industry__item">
+                  <div class="industry__wrapper">
+                    <div>
+                      <img class="w-100" src="./img/NoPath1.jpg"/>
+                    </div>
+                    <p class="date">8.18.2020</p>
+                    <div class="wrapper-description">
+                      <h4 class="title">Medical Obesity</h4>
+                      <p class="description">
+                        I believe there is such a thing as Medical Obesity. Obesity is defined as a condition characterized by the excessive accumulation and storage of fat in the body…
+                      </p>
+                      <a class="btn-read-more">READ MORE ></a>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="industry__item">
+                  <div class="industry__wrapper">
+                    <div>
+                      <img class="w-100" src="./img/NoPath2.jpg"/>
+                    </div>
+                    <p class="date">8.18.2020</p>
+                    <div class="wrapper-description">
+                      <h4 class="title">On Medical Community</h4>
+                      <p class="description">
+                        Nowadays, we find a tsunami of articles on the epidemics of moral injury and physician burnout. As physicians, we were trained to care for our patients. 99.9%…
+                      </p>
+                      <a class="btn-read-more">READ MORE ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="industry__item">
+                  <div class="industry__wrapper">
+                    <div>
+                      <img class="w-100" src="./img/NoPath3.jpg"/>
+                    </div>
+                    <p class="date">8.18.2020</p>
+                    <div class="wrapper-description">
+                      <h4 class="title">For The Love of Medicine</h4>
+                      <p class="description">
+                        This is my response to a recent Newsweek opinion piece written by a seemingly well- respected Yale epidemiologist Dr. Harvey Risch. The SARS CoV2 virus…
+                      </p>
+                      <a class="btn-read-more">READ MORE ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-border-purple-large btn-read-more">Read More</button>
+              </div>
+            </div>
+          </section>
         </div>
 
         <footer class="footer">
             <div class="footer__content">
               <div class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-6 col-xl-3">
                   <div class="footer__item footer__logo">
                     <a href="/">
                       <img class="title" src="./img/positive.png"/>
@@ -144,7 +228,7 @@
                     <p class="sub-title">Experienced doctors just a click away</p>
                   </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-6 col-xl-3">
                   <div class="footer__item">
                     <p class="title">Company</p>
                     <ul>
@@ -156,7 +240,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-6 col-xl-3">
                   <div class="footer__item">
                     <p class="title">Get care</p>
                     <ul>
@@ -168,7 +252,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-6 col-xl-3">
                   <div class="footer__item footer__contact">
                     <div>
                       <p class="title">Follow us</p>

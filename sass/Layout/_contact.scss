@@ -1,0 +1,197 @@
+.contact {
+    &__content {
+        padding-left: rem(240px);
+        padding-right: rem(240px);
+        padding-top: rem(75px);
+        padding-bottom: rem(105px);
+    }
+
+    &__left {
+        margin-top: rem(45px);
+
+        .title {
+            font-family: Raleway-ExtraBold;
+            font-size: rem(12px);
+            letter-spacing: rem(1.44px);
+            color: $color-purple-0;
+            margin-bottom: rem(13px);
+            text-transform: uppercase;
+        }
+
+        img {
+            width: rem(20px);
+        }
+
+        span,p {
+            font-size: rem(17px);
+            letter-spacing: rem(0.68px);
+            line-height: rem(44px);
+            color: $color-purple-0;
+            margin-bottom: 0;
+        }
+
+        .info {
+            div {
+                margin-left: rem(15px);
+            }
+        }
+
+        .contact__email {
+            margin-bottom: rem(15px);
+
+            span {
+                margin-left: rem(15px);
+            }
+        }
+
+        .contact__partner {
+            margin: rem(50px) 0;
+
+            p {
+                word-break: break-all;
+            }
+        }
+
+        .contact__sales {
+            p {
+                word-break: break-all;
+            }
+        }
+        
+    }
+    
+    &__right {
+        background-color: $color-orange-4;
+        border-radius: 20px;
+        padding: rem(60px) rem(160px);
+        text-align: center;
+
+        .title {
+            font-family: Nunito-Bold;
+            font-size: rem(42px);
+            letter-spacing: rem(1.68px);
+            color: $color-purple-0;
+        }
+
+        .sub-title {
+            font-size: rem(21px);
+            letter-spacing: rem(0.84px);
+            color: $color-purple-0;
+            margin-bottom: rem(50px);
+        }
+    }
+
+    &__form {
+        input {
+            height: rem(65px);
+            border-radius: 10px;
+            background-color: $color-white-0;
+            border: unset;
+            padding-left: rem(20px);
+        }
+
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: rem(14px);
+            letter-spacing: rem(0.56px);
+            color: $color-purple-5;
+        }
+
+        textarea {
+            resize: none;
+            border: unset;
+            padding-left: rem(20px);
+            padding-top: rem(23px);
+        }
+
+        .btn-color-orange {
+            height: rem(57px);
+            margin-top: rem(25px);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact {
+        &__content {
+            padding-left: rem(50px);
+            padding-right: rem(50px);
+            padding-top: rem(40px);
+        }
+
+        &__right {
+            padding: rem(75px) rem(20px);
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact {
+        &__content {
+            padding-left: rem(15px);
+            padding-right: rem(15px);
+            padding-top: rem(40px);
+        }
+
+        &__left {
+            padding: 0 rem(20px);
+            margin-bottom: rem(65px);
+
+            .title {
+                font-size: rem(10px);
+                letter-spacing: rem(1.2px);
+            }
+
+            span,p {
+                font-size: rem(18px);
+                letter-spacing: rem(0.72px);
+                line-height: rem(27px);
+                color: $color-purple-0;
+            }
+
+            .contact__phone {
+                margin-bottom: rem(25px);
+            }
+
+            .contact__partner {
+                margin: rem(35px) 0;
+            }
+        }
+
+        &__right {
+            padding: rem(75px) rem(20px);
+            border-radius: unset;
+            margin-left: 0;
+            margin-right: 0;
+
+            .title {
+                font-size: rem(24px);
+                letter-spacing: rem(0.96px);
+            }
+    
+            .sub-title {
+                font-family: Raleway-Bold;
+                font-size: rem(16px);
+                letter-spacing: rem(0.64px);
+                margin-bottom: rem(30px);
+            }
+        }
+
+        &__form {
+            .btn-color-orange {
+                margin-top: rem(40px);
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contact { 
+        &__right {
+            padding: rem(75px) rem(20px);
+            border-radius: unset;
+            margin-left: rem(-15px);
+            margin-right: rem(-15px);
+        }
+    }
+}

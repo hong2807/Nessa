@@ -27,6 +27,14 @@
     }
 }
 
+#contact {
+    .hero-section {
+        background-image: url('../img/Mask Group 27.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 @media (max-width: 1024px) { 
     .hero-section {
         &-content {
