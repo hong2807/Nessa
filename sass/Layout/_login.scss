@@ -74,6 +74,7 @@
             }
     
             input {
+                padding-left: 55px;
                 padding-right: 35px;
                 height: rem(55px);
                 border-radius: 25px;
@@ -90,8 +91,8 @@
 
         .text-forgot {
             font-family: Montserrat-Medium;
-            font-size: rem(16px);
-            letter-spacing: rem(0.64px);
+            font-size: rem(12px);
+            letter-spacing: rem(0.48px);
             text-align: right;
         }
 

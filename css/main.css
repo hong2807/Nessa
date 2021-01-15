@@ -2736,6 +2736,7 @@ a:hover {
 }
 
 .signin__form__item input {
+  padding-left: 55px;
   padding-right: 35px;
   height: 3.4375rem;
   border-radius: 25px;
@@ -2751,8 +2752,8 @@ a:hover {
 
 .signin__form .text-forgot {
   font-family: Montserrat-Medium;
-  font-size: 1rem;
-  letter-spacing: 0.04rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.03rem;
   text-align: right;
 }
 
@@ -2864,6 +2865,7 @@ a:hover {
 }
 
 .signup__form__item input {
+  padding-left: 35px;
   padding-right: 35px;
   height: 3.4375rem;
   border-radius: 25px;
@@ -3359,6 +3361,11 @@ a:hover {
   }
   #insight .hero-section {
     background-image: url("../img/Group 2373.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #contact .hero-section {
+    background-image: url("../img/Group 2374.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }

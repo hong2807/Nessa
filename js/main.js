@@ -189,4 +189,74 @@ $( document ).ready(function() {
     var pathname = window.location.pathname;
     // console.log( 'pathname', pathname );
     $(`header .header__right li a[href="${pathname}"]`).addClass("activeMenu");
+
+
+    // SignUp
+    $(".signup__form__item input").blur(function() {
+      if($(this).val() !== "") {
+          $(this).siblings("label").addClass("active");
+      }else {
+          $(this).siblings("label").removeClass("active");
+      }
+  });
+
+  $(".signup__form__item  input[type=date]").change(function() {
+      if($(this).val() !== "") {
+          $(this).css('color', "#ccc");
+          $(this).siblings("label").addClass("active");
+      }else {
+          $(this).siblings("label").removeClass("active");
+      }
+  });
+
+  // Show - hide password Signup
+  $("#signup_show_hide_password i").on('click', function(event) {
+      event.preventDefault();
+      if($('#signup_show_hide_password input').attr("type") == "text"){
+          $('#signup_show_hide_password input').attr('type', 'password');
+          $('#signup_show_hide_password i').addClass( "fa-eye-slash" );
+          $('#signup_show_hide_password i').removeClass( "fa-eye" );
+      }else if($('#signup_show_hide_password input').attr("type") == "password"){
+          $('#signup_show_hide_password input').attr('type', 'text');
+          $('#signup_show_hide_password i').removeClass( "fa-eye-slash" );
+          $('#signup_show_hide_password i').addClass( "fa-eye" );
+      }
+  });
+
+  $("#signup_show_hide_confirm_password i").on('click', function(event) {
+      event.preventDefault();
+      if($('#signup_show_hide_confirm_password input').attr("type") == "text"){
+          $('#signup_show_hide_confirm_password input').attr('type', 'password');
+          $('#signup_show_hide_confirm_password i').addClass( "fa-eye-slash" );
+          $('#signup_show_hide_confirm_password i').removeClass( "fa-eye" );
+      }else if($('#signup_show_hide_confirm_password input').attr("type") == "password"){
+          $('#signup_show_hide_confirm_password input').attr('type', 'text');
+          $('#signup_show_hide_confirm_password i').removeClass( "fa-eye-slash" );
+          $('#signup_show_hide_confirm_password i').addClass( "fa-eye" );
+      }
+  });
+
+
+  // SignIn
+  $(".signin__form__item input").blur(function() {
+    if($(this).val() != "") {
+        $(this).siblings("label").addClass("active");
+    }else {
+        $(this).siblings("label").removeClass("active");
+    }
+  });
+
+  // Show - hide password Signin
+  $("#signin_show_hide_password i").on('click', function(event) {
+      event.preventDefault();
+      if($('#signin_show_hide_password input').attr("type") == "text"){
+          $('#signin_show_hide_password input').attr('type', 'password');
+          $('#signin_show_hide_password i').addClass( "fa-eye-slash" );
+          $('#signin_show_hide_password i').removeClass( "fa-eye" );
+      }else if($('#signin_show_hide_password input').attr("type") == "password"){
+          $('#signin_show_hide_password input').attr('type', 'text');
+          $('#signin_show_hide_password i').removeClass( "fa-eye-slash" );
+          $('#signin_show_hide_password i').addClass( "fa-eye" );
+      }
+  });
 });

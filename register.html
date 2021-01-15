@@ -29,10 +29,10 @@
                   <li><a href="/telemedicine.html">Telemedicine</a></li>
                   <li><a href="/insight.html">Insight</a></li>
                   <li><a href="/contact.html">Contact</a></li>
-                  <a href="/signup.html">
+                  <a href="/register.html">
                     <button class="btn btn-color-pink btn-sign-in">Get Started</button>
                   </a>
-                  <a href="/signin.html">
+                  <a href="/login.html">
                     <li  class="user-icon"><img  src="./img/user.svg" alt="user"/></li>
                   </a>
                 </ul>
@@ -49,7 +49,7 @@
               <div class="">
                 <a href="/"><img src="./img/logo.png" alt="logo"></a>
               </div>
-              <a href="/signin.html" class="user-icon">
+              <a href="/login.html" class="user-icon">
                 <img  src="./img/user-mobile.svg" alt="user"/>
               </a>
           </div>
@@ -63,7 +63,7 @@
                     <li><a href="/telemedicine.html">Telemedicine</a></li>
                     <li><a href="/insight.html">Insight</a></li>
                     <li><a href="/contact.html">Contact</a></li>
-                    <a href="/signup.html">
+                    <a href="/register.html">
                       <button class="btn btn-color-pink btn-sign-in">Get Started</button>
                     </a>
                   </ul>
@@ -95,13 +95,13 @@
                             <input type="email" class="form-control">
                             <label>Email Address</label>
                         </div>
-                        <div class="form-group signup__form__item" id="show_hide_password">
+                        <div class="form-group signup__form__item" id="signup_show_hide_password">
                             <input type="password" class="form-control">
                             <i class="fa fa-eye-slash" aria-hidden="true"></i>
                             <label>Password</label>
                             
                         </div>
-                        <div class="form-group signup__form__item" id="show_hide_confirm_password">
+                        <div class="form-group signup__form__item" id="signup_show_hide_confirm_password">
                             <input type="password" class="form-control">
                             <i class="fa fa-eye-slash" aria-hidden="true"></i>
                             <label>Confirm Password</label>
@@ -192,66 +192,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
      <!--Main JS-->
      <script src="./js/main.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $(".signup__item input").blur(function() {
-                if($(this).val() !== "") {
-                    $(this).siblings("label").addClass("active");
-                }else {
-                    // $(this).css('color', "transparent");
-                    $(this).siblings("label").removeClass("active");
-                }
-            });
-
-            $(".signup__item input[type=date]").change(function() {
-                if($(this).val() !== "") {
-                    $(this).css('color', "#ccc");
-                    $(this).siblings("label").addClass("active");
-                }else {
-                    $(this).siblings("label").removeClass("active");
-                }
-            });
-
-            // $(".signup__item input[type=date]").focusin(function() {
-            //     // if($(this).val() !== "") {
-            //         $(this).css('color', "black");
-            //     // } else {
-            //     //     $(this).css('color', "transparent");
-            //     // }
-            // });
-
-
-
-            $("#show_hide_password i").on('click', function(event) {
-                event.preventDefault();
-                if($('#show_hide_password input').attr("type") == "text"){
-                    $('#show_hide_password input').attr('type', 'password');
-                    $('#show_hide_password i').addClass( "fa-eye-slash" );
-                    $('#show_hide_password i').removeClass( "fa-eye" );
-                }else if($('#show_hide_password input').attr("type") == "password"){
-                    $('#show_hide_password input').attr('type', 'text');
-                    $('#show_hide_password i').removeClass( "fa-eye-slash" );
-                    $('#show_hide_password i').addClass( "fa-eye" );
-                }
-            });
-
-            $("#show_hide_confirm_password i").on('click', function(event) {
-                event.preventDefault();
-                if($('#show_hide_confirm_password input').attr("type") == "text"){
-                    $('#show_hide_confirm_password input').attr('type', 'password');
-                    $('#show_hide_confirm_password i').addClass( "fa-eye-slash" );
-                    $('#show_hide_confirm_password i').removeClass( "fa-eye" );
-                }else if($('#show_hide_confirm_password input').attr("type") == "password"){
-                    $('#show_hide_confirm_password input').attr('type', 'text');
-                    $('#show_hide_confirm_password i').removeClass( "fa-eye-slash" );
-                    $('#show_hide_confirm_password i').addClass( "fa-eye" );
-                }
-            });
-
-        });
-    </script>
-    
   </body>
   
 </html>
