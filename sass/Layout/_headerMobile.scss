@@ -77,6 +77,19 @@
         text-align: center;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
+
+        .user-icon {
+            width: rem(35px);
+            margin-bottom: rem(10px);
+        }
+
+        h5 {
+            font-size: rem(18px);
+
+            span {
+                font-weight: bold;
+            }
+        }
     }
     
     div.menu ul li {
@@ -154,5 +167,11 @@
     .btn-sign-in {
         margin: rem(40px) 0;
     }
+
+    .logout-icon {
+        color: $color-pink-0;
+        font-size: rem(25px);
+    }
+
 }
 

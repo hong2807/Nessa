@@ -27,6 +27,19 @@
             position: relative;
             margin-bottom: rem(30px);
 
+            ul.parsley-errors-list {
+                position: absolute;
+                bottom: -5px;
+                transform: translateY(100%);
+                padding-left: 20px;
+
+                li {
+                    font-family: Montserrat-Medium;
+                    font-size: rem(12px);
+                    color: $color-pink-0;
+                }
+            }
+
             &:focus-within {
                 input:focus {
                     border: 2px solid $color-pink-0;
@@ -51,6 +64,7 @@
                 letter-spacing: rem(0.48px);
                 color: $color-purple-0;
                 opacity: 0.47;
+                pointer-events: none;
             }
 
             img {
@@ -78,6 +92,10 @@
                 padding-right: 35px;
                 height: rem(55px);
                 border-radius: 25px;
+
+                &.parsley-error {
+                    margin-bottom: rem(35px);
+                }
             }
     
             i {
@@ -124,6 +142,22 @@
         }
     }
 
+}
+
+@media (max-width: 1919px) {
+    .signin {
+        &__content {
+            margin: rem(85px) rem(520px);
+        } 
+    }
+}
+
+@media (max-width: 1200px) {
+    .signin {
+        &__content {
+            margin: rem(85px) rem(450px);
+        } 
+    }
 }
 
 @media (max-width: 1024px) {

@@ -1,0 +1,117 @@
+.reviews {
+    background-image: url('../img/Path 1041.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__content {
+        padding-left: rem(325px);
+        padding-right: rem(325px);
+    }
+
+    &__title {
+        .title-large {
+            margin-bottom: rem(55px);
+        }
+    }
+
+    &__item {
+        text-align: left;
+        margin-bottom: rem(15px);
+
+        &:focus {
+            outline: unset;
+        }
+    }
+
+    &__item-wrapper {
+        background-color: $color-white-0;
+        border-radius: 20px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+        height: 100%;
+        padding: rem(30px) rem(35px) rem(65px) rem(35px);
+        font-size: rem(18px);
+        color: $color-purple-0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .wrapper-description {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .description {
+            margin-top: rem(115px);
+            margin-bottom: rem(45px);
+            letter-spacing: rem(0.72px);
+            line-height: rem(38px);
+        }
+
+        .name {
+            margin-bottom: 0;
+            font-family: Raleway-Bold;
+        }
+    }
+
+    .wrapper-load-more {
+        margin-top: rem(70px);
+    }
+      
+}
+
+@media (max-width: 1024px) {
+    .reviews {
+        &__content {
+            padding: rem(70px) rem(50px);
+        }
+
+        &__item-wrapper {
+            .description {
+                margin-top: rem(30px);
+                margin-bottom: rem(40px);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .reviews {
+        &__title {
+            .title-large {
+                margin-bottom: rem(48px) !important;
+            }
+        }
+    
+        &__content {
+            padding: rem(70px) rem(20px);
+        }
+
+        &__item {
+            margin-bottom: rem(40px);
+        }
+
+        &__item-wrapper {
+            .description {
+                font-size: rem(14px);
+                margin-top: rem(20px);
+                margin-bottom: rem(40px);
+                line-height: rem(30px);
+            }
+
+            .name {
+                font-size: rem(14px);
+            }
+        }
+
+        .wrapper-load-more {
+            margin-top: 0;
+        }
+
+        button.btn-border-purple-large {
+            font-size: rem(16px);
+        }
+    }
+}

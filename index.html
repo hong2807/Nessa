@@ -41,8 +41,19 @@
                   <a href="/login.html">
                     <li  class="user-icon"><img  src="./img/user.svg" alt="user"/></li>
                   </a>
+
+                  <!-- <div class="header__sub-right">
+                    <ul class="d-flex align-items-center">
+                     <h5 class="mb-0">Hello, <span>John</span></h5>
+                      <a href="/register.html">
+                        <button class="btn btn-color-pink btn-log-out">Log out</button>
+                      </a>
+                    </ul>
+                  </div> -->
                 </ul>
+                
               </div>
+              
             </div>
       </header>
       <section class="header-mobile d-block d-xl-none">
@@ -58,12 +69,22 @@
           <a href="/login.html" class="user-icon">
             <img  src="./img/user-mobile.svg" alt="user"/>
           </a>
+          <a href="/login.html" class="logout-icon">
+            <i class="far fa-sign-out"></i>
+          </a>
+          
       </div>
         <div class="screen">
             <!-- <div class="navbar"></div> -->
             <!-- <div class="circle"></div> -->
             <div class="menu">
+             
+              
+              <img  src="./img/user-mobile.svg" alt="user" class="user-icon"/>
+            
+              <h5 class="mb-0">Hello, <span>John</span></h5>
               <ul>
+                <li></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/collaborative.html">Collaborative Care</a></li>
                 <li><a href="/telemedicine.html">Telemedicine</a></li>
@@ -92,7 +113,7 @@
               <p class="mb-0 description">
                 Our medical practice focuses on the whole body approach, combining nutrition, lifestyle, and high quality care while utilizing the most effective technology available today.
               </p>
-              <button class="btn-border-purple-small">Learn More</button>
+              <a href="#timeline" class="btn btn-border-purple-small smooth-scroll">Learn More</a>
             </div>
             <div class="collaborative__info">
               <div class="collaborative__slide">
@@ -102,7 +123,7 @@
                     <p class="description">
                       Sometimes diagnosis can get misleading. We help you get pointed towards recovery for most common conditions.
                     </p>
-                    <p class="text-orange learn-more">Learn More <img class="arrow" src="./img/arrow.svg" alt="arrow" /></p>
+                    <a href="/telemedicine.html" class="text-orange learn-more">Learn More <img class="arrow" src="./img/arrow.svg" alt="arrow" /></a>
                   </div>
                 </div>
                 <div class="collaborative__item">
@@ -111,7 +132,7 @@
                     <p class="description">
                       We offer many affordable solutions, such as one-time Telehealth visits, or ongoing Collaborative Care.
                     </p>
-                    <p class="text-orange learn-more">View Pricing <img class="arrow" src="./img/arrow.svg" alt="arrow" /></p>
+                    <a href="/collaborative.html" class="text-orange learn-more">View Pricing <img class="arrow" src="./img/arrow.svg" alt="arrow" /></a>
                   </div>
                 </div>
                 <div class="collaborative__item">
@@ -120,7 +141,7 @@
                     <p class="description">
                       When caring for you and your family, healthcare comes with a lot of questions. Here are some common answers to assist you.
                     </p>
-                    <p class="text-orange learn-more">Let's go <img class="arrow" src="./img/arrow.svg" alt="arrow" /></p>
+                    <a href="/faq.html" class="text-orange learn-more">Let's go <img class="arrow" src="./img/arrow.svg" alt="arrow" /></a>
                   </div>
                 </div>
               </div>
@@ -140,12 +161,12 @@
                 <li>CHRONIC CONDITIONS</li>
                 <li>CARE COORDINATION</li>
               </ul>
-              <button class="btn btn-border-white-small">Get Started</button>
+              <a href="/register.html" class="btn btn-border-white-small">Get Started</a>
             </div>
           </div>
         </section>
 
-        <section class="timeline">
+        <section class="timeline" id="timeline">
           <div class="timeline__content container-vertical">
             <div class="timeline__title text-center">
               <p class="title-small">PERSONALIZED COLLABORATIVE CARE</p>
@@ -250,7 +271,7 @@
             <div class="text-center">
               <p class="title-small">PERSONALIZED COLLABORATIVE CARE</p>
               <h2 class="title-large">Get started with the care your family deserves</h2>
-              <button class="btn btn-color-orange btn-learn-more">Learn More</button>
+              <a href="/collaborative.html" class="btn btn-color-orange btn-learn-more">Learn More</a>
             </div>
           </div>
         </section>
@@ -306,7 +327,7 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn-border-purple-large">Learn More</button>
+              <a href="/telemedicine.html" class="btn btn-border-purple-large">Learn More</a>
             </div> 
           </div>
         </section>
@@ -314,7 +335,7 @@
         <section class="feeling">
           <div class="feeling__content d-flex justify-content-center align-items-center">
             <h2 class="feeling__title">How are you feeling today?</h2>
-            <button class="btn btn-border-white-large btn-chat">Chat with a Doctor</button>
+            <a href="/faq.html" class="btn btn-border-white-large btn-chat">Chat with a Doctor</a>
           </div>
         </section>
 
@@ -436,7 +457,7 @@
                   <p class="description">
                     Our Coordinated Care team is led by highly skilled doctors with advanced training in functional medicine, nutrition, and comprehensive testing.
                   </p>
-                  <p class="text-orange">About Us <img class="arrow" src="./img/arrow.svg" alt="arrow" /></p>
+                  <a href="/about.html" class="text-orange">About Us <img class="arrow" src="./img/arrow.svg" alt="arrow" /></a>
                 </div>
               </div>
             </div>
@@ -447,53 +468,89 @@
           <div class="services__content container-vertical text-center"> 
             <p class="title-small">OUR PRIMARY SERVICES</p>
             <h2 class="title-large">The right care <br class="d-block d-md-none"> when you need it most</h2>
-            <div class="services__wrapper">
-              <div class="services__item d-flex justify-content-between align-items-center">
+            <div class="services__wrapper" id="accordion">
+              <div class="services__item d-flex justify-content-between align-items-center" id="services__itemOne">
                 <div class="services__item-text d-flex align-items-center">
                   <span></span>
                   <p>FREE answers about your symptoms</p>
                 </div>
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></i>
               </div>
-              <div class="services__item d-flex justify-content-between align-items-center">
+              <div id="collapseOne" class="collapse collapse-content" aria-labelledby="services__itemOne" data-parent="#accordion">
+                <div class="collapse-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias debitis expedita quis? Dolorem voluptates doloremque iure fuga, nisi ipsam voluptatibus exercitationem excepturi dignissimos cum labore omnis dolorum velit perferendis, facilis optio ipsa consectetur fugit quos vero sint minima eum! Dignissimos ab provident earum vel, sequi quo at? Quo odio quaerat in repellat cumque totam nam quas, velit tenetur officia voluptatem. Obcaecati, officiis! Cum fuga, odit, in minus suscipit voluptatem voluptates quas nihil, nam eaque nesciunt officiis. Velit, nulla autem aliquid nobis accusamus cupiditate inventore magni aperiam earum totam harum ducimus commodi similique vero ipsam quos voluptate, qui eius? Hic, sequi?
+                </div>
+              </div>
+
+              <div class="services__item d-flex justify-content-between align-items-center" id="services__itemTwo">
                 <div class="services__item-text d-flex align-items-center">
                   <span></span>
                   <p>Instant care from a doctor</p>
                 </div>
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"></i>
               </div>
-              <div class="services__item d-flex justify-content-between align-items-center">
+              <div id="collapseTwo" class="collapse collapse-content" aria-labelledby="services__itemTwo" data-parent="#accordion">
+                <div class="collapse-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis architecto ducimus quae explicabo illum! Nobis numquam aut possimus ut cupiditate.
+                </div>
+              </div>
+
+              <div class="services__item d-flex justify-content-between align-items-center" id="services__itemThree">
                 <div class="services__item-text d-flex align-items-center">
                   <span></span>
                   <p>Ongoing Primary Care</p>
                 </div>
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"></i>
               </div>
-              <div class="services__item d-flex justify-content-between align-items-center">
+              <div id="collapseThree" class="collapse collapse-content" aria-labelledby="services__itemThree" data-parent="#accordion">
+                <div class="collapse-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis architecto ducimus quae explicabo illum! Nobis numquam aut possimus ut cupiditate.
+                </div>
+              </div>
+
+              <div class="services__item d-flex justify-content-between align-items-center" id="services__itemFour">
                 <div class="services__item-text d-flex align-items-center">
                   <span></span>
                   <p>Prescription Refills</p>
                 </div>
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"></i>
               </div>
-              <div class="services__item d-flex justify-content-between align-items-center">
+              <div id="collapseFour" class="collapse collapse-content" aria-labelledby="services__itemFour" data-parent="#accordion">
+                <div class="collapse-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis architecto ducimus quae explicabo illum! Nobis numquam aut possimus ut cupiditate.
+                </div>
+              </div>
+
+              <div class="services__item d-flex justify-content-between align-items-center" id="services__itemFive">
                 <div class="services__item-text d-flex align-items-center">
                   <span></span>
                   <p>Anxiety & Depression Management</p>
                 </div>
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"></i>
               </div>
-              <div class="services__item d-flex justify-content-between align-items-center">
+              <div id="collapseFive" class="collapse collapse-content" aria-labelledby="services__itemFive" data-parent="#accordion">
+                <div class="collapse-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis architecto ducimus quae explicabo illum! Nobis numquam aut possimus ut cupiditate.
+                </div>
+              </div>
+
+              <div class="services__item d-flex justify-content-between align-items-center" id="services__itemSix">
                 <div class="services__item-text d-flex align-items-center">
                   <span></span>
                   <p>Coronavirus related concerns</p>
                 </div>
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"></i>
+              </div>
+              <div id="collapseSix" class="collapse collapse-content" aria-labelledby="services__itemSix" data-parent="#accordion">
+                <div class="collapse-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis architecto ducimus quae explicabo illum! Nobis numquam aut possimus ut cupiditate.
+                </div>
               </div>
             </div>
-            <button class="btn btn-border-purple-large">Learn More</button>
+            <a href="/telemedicine.html" class="btn btn-border-purple-large">Learn More</a>
           </div>
         </section>
+
 
         <section class="testimonials">
           <div class="testimonials__content container-vertical">
@@ -569,16 +626,16 @@
                 </div>
             </div>
             <div class="text-center">
-              <button class="btn btn-border-purple-large">Reviews</button>
+              <a href="/reviews.html" class="btn btn-border-purple-large">Reviews</a>
             </div>
           </div>
         </section>
 
         <section class="getstarted">
-          <div class="getstarted__content container-vertical text-center">
+          <div class="getstarted__content text-center">
             <p class="title-small">TELEMEDICINE FOR ALL</p>
             <h3 class="title-white">Gain a highly experienced perspective today</h3>
-            <button class="btn btn-border-white-large">Get Started</button>
+            <a href="/register.html" class="btn btn-border-white-large">Get Started</a>
           </div>
         </section>
 
@@ -637,7 +694,7 @@
               </div>
             </div>
             <div class="text-center">
-              <button class="btn btn-border-purple-large btn-read-more">Read More</button>
+              <a href="/insight.html" class="btn btn-border-purple-large btn-read-more">Read More</a>
             </div>
           </div>
         </section>
@@ -716,7 +773,7 @@
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!--Slick -->

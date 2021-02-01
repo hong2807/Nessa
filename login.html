@@ -70,20 +70,20 @@
         </section>
 
         <div class="page-content">
-          <section class="signin">  
+          <section class="signin ">  
             <div class="signin__content">
                 <div class="signin__title">
                     <h4 class="title">Sign in to your account</h4>
                 </div>
-                <form class="signin__form">
+                <form class="signin__form" data-parsley-validate>
                     <div class="form-group signin__form__item">
                         <img src="./img/email icon.svg"/>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" required data-parsley-trigger="input">
                         <label>Email Address</label>
                     </div>
                     <div class="form-group signin__form__item" id="signin_show_hide_password">
                         <img src="./img/pass icon.svg"/>
-                        <input type="password" class="form-control">
+                        <input type="password" class="form-control" required data-parsley-trigger="input">
                         <i class="fa fa-eye-slash" aria-hidden="true"></i>
                         <label>Password</label>
                     </div>
@@ -165,6 +165,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Parsley -->
+    <script src="./lib/parsley/parsley.min.js"></script>
     <!--Main JS-->
     <script src="./js/main.js"></script>
   </body>

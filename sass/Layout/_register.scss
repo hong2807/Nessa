@@ -32,7 +32,21 @@
     &__form {
         &__item {
             position: relative;
-            padding: 0 rem(200px);
+            margin-left: rem(200px);
+            margin-right: rem(200px);
+
+            ul.parsley-errors-list {
+                position: absolute;
+                bottom: 0;
+                transform: translateY(100%);
+                padding-left: 20px;
+
+                li {
+                    font-family: Montserrat-Medium;
+                    font-size: rem(12px);
+                    color: $color-pink-0;
+                }
+            }
 
             &:focus-within {
                 input:focus {
@@ -49,7 +63,7 @@
     
             label {
                 position: absolute;
-                left: 230px;
+                left: 30px;
                 top: 50%;
                 transform: translateY(-50%);
                 transition: all 0.3s;
@@ -58,10 +72,9 @@
                 letter-spacing: rem(0.48px);
                 color: $color-purple-0;
                 opacity: 0.47;
+                pointer-events: none;
             }
 
-            
-    
             label.active {
                 top: 0;
                 background-color: $color-white-0;
@@ -77,11 +90,15 @@
                 padding-right: 35px;
                 height: rem(55px);
                 border-radius: 25px;
+
+                &.parsley-error {
+                    margin-bottom: rem(35px);
+                }
             }
     
             i {
                 position: absolute;
-                right: 230px;
+                right: 30px;
                 top: 50%;
                 transform: translateY(-50%);
                 color: $color-grey-0;
@@ -161,6 +178,22 @@ input:focus::-webkit-datetime-edit{ color: #000 !important; }
     }
 }
 
+@media (max-width: 1919px) { 
+    .signup {
+        &__form {
+            &__item {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .signup__form__item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 1024px) {
     .signup {
         &__content {
@@ -178,7 +211,8 @@ input:focus::-webkit-datetime-edit{ color: #000 !important; }
 
         &__form {
             &__item {
-                padding: 0;
+                margin-left: 0;
+                margin-right: 0;
 
                 label {
                     left: 30px;

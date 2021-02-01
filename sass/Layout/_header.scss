@@ -44,4 +44,21 @@
             }
         }
     }
+
+    &__sub-right {
+        border-left: 1px solid $color-purple-0;
+
+        h5 {
+            margin: 0 rem(35px);
+            font-size: rem(18px);
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .btn-log-out {
+            width: rem(120px);
+        }
+    }
 }

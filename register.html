@@ -78,31 +78,31 @@
                         <h4 class="title">Welcome!</h4>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                     </div>
-                    <form class="signup__form">
+                    <form class="signup__form" data-parsley-validate>
                         <div class="form-group signup__form__item">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" required data-parsley-trigger="input">
                             <label>First Name</label>
                         </div>
                         <div class="form-group signup__form__item">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" required data-parsley-trigger="input">
                             <label>Last Name</label>
                         </div>
                         <div class="form-group signup__form__item">
-                            <input type="date" class="form-control">
+                            <input type="date" class="form-control" required data-parsley-trigger="input">
                             <label>Date of Birth</label>
                         </div>
                         <div class="form-group signup__form__item">
-                            <input type="email" class="form-control">
+                            <input type="email" class="form-control" required data-parsley-trigger="input">
                             <label>Email Address</label>
                         </div>
                         <div class="form-group signup__form__item" id="signup_show_hide_password">
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" id="signup-password" required data-parsley-trigger="input" data-parsley-min="6">
                             <i class="fa fa-eye-slash" aria-hidden="true"></i>
                             <label>Password</label>
                             
                         </div>
                         <div class="form-group signup__form__item" id="signup_show_hide_confirm_password">
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" required data-parsley-trigger="input"data-parsley-equalto="#signup-password">
                             <i class="fa fa-eye-slash" aria-hidden="true"></i>
                             <label>Confirm Password</label>
                         </div>
@@ -190,6 +190,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!-- Parsley -->
+    <script src="./lib/parsley/parsley.min.js"></script>
      <!--Main JS-->
      <script src="./js/main.js"></script>
   </body>
